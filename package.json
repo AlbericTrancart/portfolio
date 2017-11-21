@@ -1,0 +1,21 @@
+{
+  "name": "alberictrancartportfolio",
+  "description": "Portfolio",
+  "author": "Albéric Trancart",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
