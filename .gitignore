@@ -1,2 +1,6 @@
+.vagrant/
 node_modules/
-.next/
+public/bundle.js
+
+*.log
+*.retry
