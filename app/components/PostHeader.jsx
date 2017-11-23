@@ -26,7 +26,9 @@ const PostHeader = (props) => {
           </Link>
         </h3>
       )}
-      <img className="full-width mtop" src={image} alt={props.data.title} />
+      <Link to={props.data.url}>
+        <img className="full-width mtop" src={image} alt={props.data.title} />
+      </Link>
     </header>
   );
 };

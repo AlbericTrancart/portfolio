@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import structs from '~/structs';
-import './Footer.styl';
+import './ProjectPreview.styl';
 
 const ProjectPreview = (props) => {
   const project = props.data;
@@ -13,7 +13,9 @@ const ProjectPreview = (props) => {
     <Link to={project.url} className={props.className}>
       <article className="ProjectPreview">
         <div className="ProjectPreview__image full-width full-height" style={{ backgroundImage: `url(${image})` }} />
-        <h3 className="ProjectPreview__title Link Link--no-underline">{project.title}</h3>
+        <h3 className="ProjectPreview__title Link Link--no-underline fx-col fx-center-xs">
+          {project.title}
+        </h3>
       </article>
     </Link>
   );

@@ -69,15 +69,15 @@ export default () => (
         <p>Here are some criteria I listed in order to plan this:</p>
 
         <ul>
-          <li>The table can be reconfigured easily to vary the challenges;</li>
-          <li>The table is easy to store;</li>
+          <li>The table can be reconfigured easily to vary the challenges</li>
+          <li>The table is easy to store</li>
           <li>
             The table must be bigger than a standard one (4’x6′) and can be
-            extended easily (I love Apocalypse-sized games);
+            extended easily (I love Apocalypse-sized games)
           </li>
           <li>
             The table should cost less than 150€ (about $165). Games Workshop’s
-            Citadel Gaming Board costs 260€ (or $330);
+            Citadel Gaming Board costs 260€ (or $330)
           </li>
           <li>
             The table must be done in less than two weeks. I knew I would not finish

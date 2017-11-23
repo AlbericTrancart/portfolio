@@ -8,7 +8,7 @@ window.BaseRouter = {
   init: function init(mountpoint) {
     render(
       <Root />,
-      document.getElementById(mountpoint)
+      document.getElementById(mountpoint),
     );
 
     if (module.hot) {
@@ -16,7 +16,7 @@ window.BaseRouter = {
         const NewRoot = require('~/components/Root.jsx').default;
         render(
           <NewRoot />,
-          document.getElementById(mountpoint)
+          document.getElementById(mountpoint),
         );
       });
     }

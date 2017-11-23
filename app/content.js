@@ -29,11 +29,50 @@ export default {
     url: '/2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week',
     image: 'posts/lavagamingboard/oglogo.jpg',
     date: '2016-11-08',
+  }, {
+    id: 4,
+    title: 'Prevent the CSS being a chore',
+    subtitle: `Last month I presented a talk @ HumanTalks Paris about CSS and
+              what you can do to prevent it being a chore. Having unreadable CSS
+              files of thousands of lines is neither fun nor good for business.`,
+    url: '/2017/11/prevent-the-css-being-a-chore',
+    image: 'posts/humantalkscss/oglogo.jpg',
+    date: '2017-11-23',
   }],
   projects: [{
     id: 1,
+    title: 'Space Hulk Mod',
+    image: 'projects/spacehulkmod/oglogo.jpg',
+    url: '/projects/space-hulk-mod',
+  }, {
+    id: 2,
+    title: 'Wooden Bridge',
+    image: 'projects/woodenbridge/oglogo.jpg',
+    url: '/projects/wooden-bridge',
+  }, {
+    id: 3,
+    title: 'KarambaToSofistik',
+    image: 'projects/karambatosofistik/oglogo.jpg',
+    url: '/projects/karamba-to-sofistik',
+  }, {
+    id: 4,
+    title: 'uPont',
+    image: 'projects/upont/oglogo.jpg',
+    url: '/projects/upont',
+  }, {
+    id: 5,
     title: 'Lava Gaming Board',
     image: 'posts/lavagamingboard/oglogo.jpg',
-    url: '/posts/2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week',
+    url: '/projects/lava-gaming-board',
+  }, {
+    id: 6,
+    title: 'SpaceX Stats',
+    image: 'projects/spacexstats/oglogo.jpg',
+    url: '/projects/spacex-stats',
+  }, {
+    id: 7,
+    title: 'GeoSchool',
+    image: 'projects/geoschool/oglogo.jpg',
+    url: '/projects/geoschool',
   }],
 };

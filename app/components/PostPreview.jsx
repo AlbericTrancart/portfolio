@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import structs from '~/structs';
 import PostHeader from './PostHeader.jsx';
+import './PostPreview.styl';
 
 const PostPreview = (props) => {
   const post = props.data;
