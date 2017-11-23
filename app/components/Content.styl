@@ -1,18 +1,30 @@
 @require '../style/variables'
 
 .Content
-    h1, h2, h3, p, img
+    // Center images
+    text-align: center
+    h1, h2, h3, p, img, blockquote, ul, ol
+        text-align: left
+
+    h1, h2, h3, p, img, blockquote
         margin-top: $spacing-factor
         @media (min-width: $sm-threshold)
             margin-top: 2 * $spacing-factor
 
     img
-        width: 100%
+        max-width: 100%
 
     figure
+        text-align: center
         width: 100%
 
     figcaption
         font-style: italic
         margin-top: .5 * $spacing-factor
         text-align: center
+
+    blockquote
+        font-style: italic
+        border-left: $base-font-color .4em solid
+        padding-left: 1.6rem
+        margin-left: -1.6rem

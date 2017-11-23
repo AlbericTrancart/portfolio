@@ -12,7 +12,7 @@ const PostPreview = (props) => {
     <article className={props.className}>
       <PostHeader data={post} />
       <p className="mtop">
-        {post.subtitle} <Link className="Link" to={post.url}>Read →</Link>
+        {post.subtitle} <Link className="Link" to={post.url}>Read&nbsp;→</Link>
       </p>
       {props.endDivider && <hr className="Divider mtop" />}
     </article>
