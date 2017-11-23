@@ -2,8 +2,11 @@
 
 .Link
     color: $link-color
-    transition: color ease .3s
     cursor: pointer
+    transition: color ease .3s
 
     &:hover, &:focus
         color: $link-color-hover
+
+    &--no-underline
+        text-decoration: none

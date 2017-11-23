@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    path.join(__dirname, './app/index.js')
+    path.join(__dirname, './app/index.js'),
   ],
   resolve: {
     alias: {
@@ -17,6 +17,7 @@ module.exports = {
       path.join(__dirname, '/app'),
       'node_modules',
     ],
+    extensions: ['.js', '.jsx'],
   },
   output: {
     path: path.join(__dirname, '/dist/'),
@@ -31,31 +32,31 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'app/index.tpl.html',
       inject: 'body',
-      filename: 'index.html'
+      filename: 'index.html',
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
+      'process.env.NODE_ENV': JSON.stringify('development'),
     }),
   ],
   module: {
     rules: [{
       enforce: 'pre',
-      test: /\.js$/,
-      exclude: /node_modules/,
+      test: /\.jsx?$/,
+      exclude: ['/node_modules/', 'app/index.js'],
       loader: 'eslint-loader',
       options: {
         configFile: '.eslintrc',
         failOnWarning: false,
-        failOnError: false
-      }
+        failOnError: false,
+      },
     }, {
-      test: /\.js?$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
     }, {
       test: /\.(png|jpe?g|gif)$/,
-      loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
+      loader: 'url-loader?limit=8192', // inline base64 URLs for <=8k images, direct URLs for the rest
     }, {
       test: /\.styl$/,
       loader: 'style-loader!css-loader!stylus-loader',

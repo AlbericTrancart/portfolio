@@ -16,6 +16,7 @@ module.exports = {
       context,
       'node_modules',
     ],
+    extensions: ['.js', '.jsx'],
   },
   output: {
     path: path.join(__dirname, 'public'),
