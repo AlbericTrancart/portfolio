@@ -13,7 +13,7 @@ import content from '~/content';
 export default (
   <Switch>
     { /* Posts */ }
-    <Route path={content.posts[0].url} component={LavaGamingBoardPost} />
+    <Route path={content.posts[2].url} component={LavaGamingBoardPost} />
 
     { /* Projects */ }
     <Route path={content.projects[0].url} component={LavaGamingBoardProject} />
@@ -22,7 +22,3 @@ export default (
     <Route path="*" component={HomeView} />
   </Switch>
 );
-
-// /2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week/
-// /2016/10/why-mars-matters/
-// /2016/10/learn-and-share-the-one-post-to-rule-them-all/

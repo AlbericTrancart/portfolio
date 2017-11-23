@@ -1,42 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-// import moment from 'moment';
+
+import structs from '~/structs';
+import PostHeader from './PostHeader.jsx';
 
 const PostPreview = (props) => {
   const post = props.data;
-  const image = require(`img/posts/${post.image}`);
-  // const date = moment(post.date).format();
   return (
     <article className={props.className}>
-      <header>
-        <h3>
-          <Link className="Link Link--no-underline" to={post.url}>{post.title}</Link>
-        </h3>
-        <small>{post.date}</small>
-      </header>
-      <img className="full-width mtop" src={image} alt={post.title} />
+      <PostHeader data={post} />
       <p className="mtop">
-        {post.subtitle} <Link className="Link" to={post.url}>Read more →</Link>
+        {post.subtitle} <Link className="Link" to={post.url}>Read →</Link>
       </p>
+      {props.endDivider && <hr className="Divider mtop" />}
     </article>
   );
 };
 
 PostPreview.defaultProps = {
   className: '',
+  endDivider: false,
 };
 
 PostPreview.propTypes = {
   className: PropTypes.string,
-  data: PropTypes.shape({
-    id: '',
-    title: '',
-    subtitle: '',
-    image: '',
-    url: '',
-    date: '',
-  }).isRequired,
+  data: PropTypes.shape(structs.post).isRequired,
+  endDivider: PropTypes.bool,
 };
 
 export default PostPreview;

@@ -8,13 +8,13 @@ export default () => (
   <header className="Header">
     <div className="fx-container padded">
       <div className="fx-row fx-wrap fx-center-xs fx-middle-xs">
-        <div className="fx-col-xs-6 fx-col-sm-2">
+        <div className="fx-col-xs-6 fx-col-sm-3">
           <Link to="/" title="Back to the home page">
             <img className="Header__image" src={profilePicture} alt="My profile pic!" />
           </Link>
         </div>
 
-        <div className="fx-col-xs-12 fx-col-sm">
+        <div className="fx-col-xs-12 fx-col-sm-9">
           <h1>Albéric Trancart</h1>
           <p className="mtop">Developer, life hacker, space enthusiast and more!</p>
           <p className="Header__icons">

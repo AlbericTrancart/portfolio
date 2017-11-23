@@ -1,9 +1,10 @@
 const path = require('path');
 const express = require('express');
+
 const port = (process.env.PORT || 5000);
 const app = express();
 
-const context = __dirname + '/app';
+const context = `${__dirname}/app`;
 const indexPath = path.join(__dirname, 'dist/index.html');
 if (process.env.NODE_ENV !== 'production') {
   const webpack = require('webpack');
@@ -15,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 
   const middleware = webpackDevMiddleware(compiler, {
     contentBase: context,
-    port: port,
+    port,
     inline: false,
     historyApiFallback: true,
     hot: true,
@@ -39,19 +40,19 @@ if (process.env.NODE_ENV !== 'production') {
       hash: false,
       timings: false,
       chunks: false,
-      chunkModules: false
+      chunkModules: false,
     },
   });
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
-  app.get('*', function response(req, res) {
+  app.get('*', (req, res) => {
     res.write(middleware.fileSystem.readFileSync(indexPath));
     res.end();
   });
 } else {
-  app.use(express.static(__dirname + '/dist'));
-  app.get('*', function response(req, res) {
+  app.use(express.static(`${__dirname}/dist`));
+  app.get('*', (req, res) => {
     res.sendFile(indexPath);
   });
 }

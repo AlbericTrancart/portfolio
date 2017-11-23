@@ -8,20 +8,20 @@
 
 // Centering
 .padded
-    padding: 0.5rem
+    padding: .5 * $spacing-factor
     @media (min-width: $sm-threshold)
-        padding: 1rem
+        padding: $spacing-factor
 
 .hidden
     display: none
 
 // Unified margin top value to separe blocks
 .mtop
-    margin-top: 1rem
+    margin-top: $spacing-factor
 .mtop-big
-    margin-top: 2rem
+    margin-top: 2 * $spacing-factor
 
-// Flex. Grid system with 1rem gutters between each element in every direction.
+// Flex. Grid system with $spacing-factor gutters between each element in every direction.
 .fx-container
     margin-left: auto
     margin-right: auto
@@ -32,6 +32,7 @@
     @media only screen and (min-width: $md-threshold)
         width: $md-threshold
     @media only screen and (min-width: $lg-threshold)
+        max-width: 900px
         width: $lg-threshold
 
 // Rows/columns
@@ -39,9 +40,9 @@
     display: flex
     position: relative
     flex-direction: row
-    margin-right: -0.5rem
-    margin-left: -0.5rem
-    margin-bottom: -1rem
+    margin-right: -.5 * $spacing-factor
+    margin-left: -.5 * $spacing-factor
+    margin-bottom: -$spacing-factor
     &.fx-reverse
         flex-direction: row-reverse
 
@@ -64,16 +65,16 @@
 prefixed-classes($prefix)
     .fx-col-{$prefix}
         width: auto
-        padding-left: 0.5rem
-        padding-right: 0.5rem
-        padding-bottom: 1rem
+        padding-left: .5 * $spacing-factor
+        padding-right: .5 * $spacing-factor
+        padding-bottom: $spacing-factor
 
     for $column in (1..12)
         .fx-col-{$prefix}-{$column}
             width: (100*$column/12)%
-            padding-left: 0.5rem
-            padding-right: 0.5rem
-            padding-bottom: 1rem
+            padding-left: .5 * $spacing-factor
+            padding-right: .5 * $spacing-factor
+            padding-bottom: $spacing-factor
         .fx-col-{$prefix}-offset-{$column}
             margin-left: (100*$column/12)%
 

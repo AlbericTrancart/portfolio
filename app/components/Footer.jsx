@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './Footer.styl';
+
 export default () => (
-  <footer className="Footer fx-container padded mtop-big text-center">
+  <footer className="Footer fx-container padded text-center">
     {window.location.pathname !== '/' &&
       <Link to="/" className="Link">
-        <i className="fa fa-home" />
-        Back to home page
+        Back to the home page
       </Link>
     }
 
