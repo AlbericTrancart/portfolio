@@ -22,7 +22,10 @@ View.defaultProps = {
 };
 
 View.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+  ]).isRequired,
   title: PropTypes.string,
 };
 

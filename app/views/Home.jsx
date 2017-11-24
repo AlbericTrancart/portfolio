@@ -26,13 +26,14 @@ export default () => {
           <li>Life hacks</li>
           <li>Civil engineering and architecture</li>
           <li>Heavy metal music</li>
+          <li>Theatre</li>
           <li>Roleplaying</li>
           <li>Model painting</li>
           <li>… and more, depending on the mood!</li>
         </ul>
 
         <p>
-          But most of all, I love learning! As a consequence, I will post about what I believe is worth sharing. <strong>If you have any question/feedback, DM me on <a className="Link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/alberictrancart" title="Twitter">Twitter</a> or <a className="Link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alberic-trancart" title="LinkedIn">LinkedIn</a></strong>.<br />
+          But most of all, I love learning! As a consequence, I will post about what I believe is worth sharing. <strong>If you have any question or feedback, DM me on <a className="Link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/alberictrancart" title="Twitter">Twitter</a> or <a className="Link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alberic-trancart" title="LinkedIn">LinkedIn</a></strong>.<br />
           <br />
           <em>
             All posts will be in english. I may publish a french version for the
