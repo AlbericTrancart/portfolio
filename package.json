@@ -8,14 +8,15 @@
   "scripts": {
     "test": "eslint .",
     "build": "rimraf dist && export NODE_ENV='production' && webpack --config ./webpack.prod.config.js --progress --profile --colors",
-    "start:prod": "export NODE_ENV='production' && node app.js",
-    "start": "node app.js",
+    "start": "node main.js",
+    "start:prod": "export NODE_ENV='production' && node main.js",
     "eslint": "eslint . --fix",
     "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "babel-polyfill": "^6.8.0",
     "babel-preset-env": "^1.6.1",
+    "ejs": "^2.5.7",
     "eslint-import-resolver-babel-plugin-root-import": "^0.0.11",
     "eslint-import-resolver-webpack": "^0.8.3",
     "express": "^4.16.1",
@@ -29,6 +30,7 @@
     "react-dom": "^16",
     "react-hot-loader": "^3.0.0-beta.2",
     "react-player": "^0.25.3",
+    "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4",
     "react-scrollable-anchor": "^0.5.0",
     "webpack": "^3.5.6"
@@ -49,7 +51,9 @@
     "eslint-plugin-jsx-a11y": "^6",
     "eslint-plugin-react": "^7",
     "extract-text-webpack-plugin": "^3.0.0",
+    "ignore-styles": "^5.0.1",
     "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
     "react-addons-test-utils": "^15.0.2",
     "style-loader": "^0.19",
     "stylus": "^0.54.5",

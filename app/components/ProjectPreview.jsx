@@ -7,7 +7,7 @@ import './ProjectPreview.styl';
 
 const ProjectPreview = (props) => {
   const project = props.data;
-  const image = require(`img/${project.image}`);
+  const image = `/img/${project.image}`;
 
   return (
     <Link to={project.url} className={props.className}>

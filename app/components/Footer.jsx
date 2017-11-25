@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Link, withRouter } from 'react-router-dom';
 
 import './Footer.styl';
 
-export default () => (
+const Footer = props => (
   <footer className="Footer fx-container padded text-center">
-    {window.location.pathname !== '/' &&
+    {props.location.pathname !== '/' &&
       <Link to="/" className="Link">
         Back to the home page
       </Link>
@@ -19,3 +20,9 @@ export default () => (
     <a className="Footer__link Link" target="_blank" rel="noreferrer noopener" href="http://bettermotherfuckingwebsite.com" title="This site is a better motherfucking website">bettermotherfuckingwebsite.com</a>.
   </footer>
 );
+
+Footer.propTypes = {
+  location: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+};
+
+export default withRouter(Footer);

@@ -1,38 +1,28 @@
-const path = require('path');
-const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const dirs = require('./app/dirs');
 
 module.exports = {
   devtool: 'source-map',
   entry: [
-    path.join(__dirname, './app/index.jsx'),
+    dirs.main,
   ],
-  resolve: {
-    alias: {
-      app: 'app',
-    },
-    modules: [
-      path.join(__dirname, '/app'),
-      'node_modules',
-    ],
-    extensions: ['.js', '.jsx'],
-  },
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: dirs.dist,
     filename: '[name]-[hash].js',
     publicPath: '/',
   },
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: path.join(__dirname, '/app/img/profile.jpg'),
+      logo: dirs.favicon,
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
+      template: '!!raw-loader!app/index.tpl.html',
       inject: 'body',
-      filename: 'index.html',
+      filename: 'index.ejs',
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
@@ -61,9 +51,6 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
-    }, {
-      test: /\.(png|jpe?g|gif)$/,
-      loader: 'url-loader?limit=8192', // inline base64 URLs for <=8k images, direct URLs for the rest
     }, {
       test: /\.styl$/,
       loader: ExtractTextPlugin.extract({

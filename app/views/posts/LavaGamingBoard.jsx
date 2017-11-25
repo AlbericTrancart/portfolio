@@ -4,52 +4,7 @@ import View from '~/components/View.jsx';
 import content from '~/content';
 import PostHeader from '~/components/PostHeader.jsx';
 
-import image1 from '~/img/posts/lavagamingboard/image1.jpg';
-import image2 from '~/img/posts/lavagamingboard/image2.jpg';
-import image3 from '~/img/posts/lavagamingboard/image3.jpg';
-import image4 from '~/img/posts/lavagamingboard/image4.jpg';
-import image5 from '~/img/posts/lavagamingboard/image5.jpg';
-import image6 from '~/img/posts/lavagamingboard/image6.jpg';
-import image7 from '~/img/posts/lavagamingboard/image7.jpg';
-import image8 from '~/img/posts/lavagamingboard/image8.jpg';
-import image9 from '~/img/posts/lavagamingboard/image9.jpg';
-import image10 from '~/img/posts/lavagamingboard/image10.jpg';
-import image11 from '~/img/posts/lavagamingboard/image11.jpg';
-import image12 from '~/img/posts/lavagamingboard/image12.jpg';
-import image13 from '~/img/posts/lavagamingboard/image13.jpg';
-import image14 from '~/img/posts/lavagamingboard/image14.jpg';
-import image15 from '~/img/posts/lavagamingboard/image15.jpg';
-import image16 from '~/img/posts/lavagamingboard/image16.jpg';
-import image17 from '~/img/posts/lavagamingboard/image17.jpg';
-import image18 from '~/img/posts/lavagamingboard/image18.jpg';
-import image19 from '~/img/posts/lavagamingboard/image19.jpg';
-import image20 from '~/img/posts/lavagamingboard/image20.jpg';
-import image21 from '~/img/posts/lavagamingboard/image21.jpg';
-import image22 from '~/img/posts/lavagamingboard/image22.jpg';
-import image23 from '~/img/posts/lavagamingboard/image23.jpg';
-import image24 from '~/img/posts/lavagamingboard/image24.jpg';
-import image25 from '~/img/posts/lavagamingboard/image25.jpg';
-import image26 from '~/img/posts/lavagamingboard/image26.jpg';
-import image27 from '~/img/posts/lavagamingboard/image27.jpg';
-import image28 from '~/img/posts/lavagamingboard/image28.jpg';
-import image29 from '~/img/posts/lavagamingboard/image29.jpg';
-import image30 from '~/img/posts/lavagamingboard/image30.jpg';
-import image31 from '~/img/posts/lavagamingboard/image31.jpg';
-import image32 from '~/img/posts/lavagamingboard/image32.jpg';
-import image33 from '~/img/posts/lavagamingboard/image33.jpg';
-import image34 from '~/img/posts/lavagamingboard/image34.jpg';
-import image35 from '~/img/posts/lavagamingboard/image35.jpg';
-import image36 from '~/img/posts/lavagamingboard/image36.jpg';
-import image37 from '~/img/posts/lavagamingboard/image37.jpg';
-import image38 from '~/img/posts/lavagamingboard/image38.jpg';
-import image39 from '~/img/posts/lavagamingboard/image39.jpg';
-import image40 from '~/img/posts/lavagamingboard/image40.jpg';
-import image41 from '~/img/posts/lavagamingboard/image41.jpg';
-import image42 from '~/img/posts/lavagamingboard/image42.jpg';
-import image43 from '~/img/posts/lavagamingboard/image43.jpg';
-import image44 from '~/img/posts/lavagamingboard/image44.jpg';
-import image45 from '~/img/posts/lavagamingboard/image45.jpg';
-import image46 from '~/img/posts/lavagamingboard/image46.jpg';
+const imgdir = '/img/posts/lavagamingboard/';
 
 export default () => (
   <View>
@@ -87,8 +42,8 @@ export default () => (
 
         <p>Before diving into the “How” part, let’s tease the result with some pics :</p>
 
-        <img src={image1} alt="The table without minis" />
-        <img src={image2} alt="The table with minis" />
+        <img src={`${imgdir}image1.jpg`} alt="The table without minis" />
+        <img src={`${imgdir}image2.jpg`} alt="The table with minis" />
       </section>
 
       <section className="Content">
@@ -113,7 +68,7 @@ export default () => (
         </p>
 
         <figure>
-          <img src={image3} alt="The plan" />
+          <img src={`${imgdir}image3.jpg`} alt="The plan" />
           <figcaption>The plan</figcaption>
         </figure>
 
@@ -143,7 +98,7 @@ export default () => (
 
         <p><strong>TOTAL:</strong> 114€ (about $125)</p>
 
-        <img src={image4} alt="The materials" />
+        <img src={`${imgdir}image4.jpg`} alt="The materials" />
 
         <h3>Designing the modules</h3>
 
@@ -152,11 +107,11 @@ export default () => (
           a guide, I cut through the foam with a very sharp knife.
         </p>
 
-        <img src={image5} alt="8 modules per foam sheet" />
+        <img src={`${imgdir}image5.jpg`} alt="8 modules per foam sheet" />
 
         <p>After that I used sandpaper to smooth the edges of the modules.</p>
 
-        <img src={image6} alt="Smoothing the edges with sandpaper" />
+        <img src={`${imgdir}image6.jpg`} alt="Smoothing the edges with sandpaper" />
 
         <p>
           Following the plan, I drawn the lava channels and I identified
@@ -164,7 +119,7 @@ export default () => (
           to make sure the lava channels would face each other properly.
         </p>
 
-        <img src={image7} alt="Templating the modules" />
+        <img src={`${imgdir}image7.jpg`} alt="Templating the modules" />
 
         <p>
           Then I cut the lava channels with the sharp knife. To randomize the
@@ -173,22 +128,22 @@ export default () => (
           I got the look and feel that I wanted.
         </p>
 
-        <img src={image8} alt="Cutting the lava channels" />
+        <img src={`${imgdir}image8.jpg`} alt="Cutting the lava channels" />
 
         <p>
           Time to glue the foam to the plywood! Using the caulking gun to make
           sure the edges have some glue. This is very funny.
         </p>
 
-        <img src={image9} alt="Gluing the foam" />
+        <img src={`${imgdir}image9.jpg`} alt="Gluing the foam" />
 
         <p>Dry time: one night.</p>
 
-        <img src={image10} alt="Waiting for the glue to dry" />
+        <img src={`${imgdir}image10.jpg`} alt="Waiting for the glue to dry" />
 
         <p>After that, checking that the modules fitted in properly before continuing.</p>
 
-        <img src={image11} alt="Checking that the modules fit" />
+        <img src={`${imgdir}image11.jpg`} alt="Checking that the modules fit" />
 
         <h3>Customizing the modules</h3>
 
@@ -199,28 +154,28 @@ export default () => (
           the foam with the scissors.
         </p>
 
-        <img src={image12} alt="Melting soil modules" />
+        <img src={`${imgdir}image12.jpg`} alt="Melting soil modules" />
 
         <p>
           For two other modules I made some rifts with the same scissors-technique,
           but on a larger scale.
         </p>
 
-        <img src={image13} alt="Rifts modules" />
+        <img src={`${imgdir}image13.jpg`} alt="Rifts modules" />
 
         <p>
           I also wanted really special modules. To make these, I used the remaining
           foam to build a mountain in the corner/a volcano in the center of another one.
         </p>
 
-        <img src={image14} alt="The mountain module" />
+        <img src={`${imgdir}image14.jpg`} alt="The mountain module" />
 
         <p>
           Then I covered it with paper mache (that’s where the plaster has a
           role to play) to get a smooth and hard surface.
         </p>
 
-        <img src={image15} alt="The volcano module" />
+        <img src={`${imgdir}image15.jpg`} alt="The volcano module" />
 
         <h3>Adding some scenery</h3>
 
@@ -230,7 +185,7 @@ export default () => (
           will be put to great use now.
         </p>
 
-        <img src={image16} alt="Using some ruins" />
+        <img src={`${imgdir}image16.jpg`} alt="Using some ruins" />
 
         <p>
           From the old buildings I never used, I took some of the floor tiles and
@@ -238,14 +193,14 @@ export default () => (
           to cross and 1 capable of handling a Land Raider.
         </p>
 
-        <img src={image17} alt="Making bridges" />
+        <img src={`${imgdir}image17.jpg`} alt="Making bridges" />
 
         <p>
           I sprayed them with a layer of chaos black then I took the white spray
           and used it at a high angle from above.
         </p>
 
-        <img src={image18} alt="Basing the scenery" />
+        <img src={`${imgdir}image18.jpg`} alt="Basing the scenery" />
 
         <p>
           After that, I applied a brown wash on the walls and I painted the details
@@ -253,7 +208,7 @@ export default () => (
           I was satisfied by the ruins painted in less than 20 minutes.
         </p>
 
-        <img src={image19} alt="Painting the scenery" />
+        <img src={`${imgdir}image19.jpg`} alt="Painting the scenery" />
 
         <h3>Time for some texturing</h3>
 
@@ -264,25 +219,25 @@ export default () => (
           it works very well. So first of all, let’s apply a generous first coat.
         </p>
 
-        <img src={image20} alt="Coating the modules with latex paint" />
+        <img src={`${imgdir}image20.jpg`} alt="Coating the modules with latex paint" />
 
         <p>
           I poored the sand on the fresh paint and let it dried 4 hours – enough
           time for the sand to be “glued” by the paint to the foam.
         </p>
 
-        <img src={image21} alt="Applying sand" />
+        <img src={`${imgdir}image21.jpg`} alt="Applying sand" />
 
         <p>
           Working with modules is a real pleasure because you can texture one at
           a time, and when you finish the last module the first one is dry.
         </p>
 
-        <img src={image22} alt="All the modules drying" />
+        <img src={`${imgdir}image22.jpg`} alt="All the modules drying" />
 
         <p>I got all the loose sand off, then I brushed another thick coat of paint.</p>
 
-        <img src={image23} alt="Adding another coat of paint" />
+        <img src={`${imgdir}image23.jpg`} alt="Adding another coat of paint" />
 
         <p>
           This time I waited one night just to be on the safe side. After that I
@@ -291,21 +246,21 @@ export default () => (
           drybrushing on the small “rocks” and the edges of the lava channels.
         </p>
 
-        <img src={image24} alt="Painting the sand texture" />
+        <img src={`${imgdir}image24.jpg`} alt="Painting the sand texture" />
 
         <p>
           For the “meltdown” soil, I simply brushed some orange paint (made with
           the white acrylic paint and the red and yellow dyes).
         </p>
 
-        <img src={image25} alt="Painting the molten soil modules" />
+        <img src={`${imgdir}image25.jpg`} alt="Painting the molten soil modules" />
 
         <p>
           For these modules I used the same technique than for the ruins: I took
           all the foam scrap I got and mixed them into the sand during the texturing phase.
         </p>
 
-        <img src={image26} alt="Texturing the ruins" />
+        <img src={`${imgdir}image26.jpg`} alt="Texturing the ruins" />
 
         <h3>Adding the lava</h3>
 
@@ -314,37 +269,37 @@ export default () => (
           into the lava channels.
         </p>
 
-        <img src={image27} alt="Adding the lava texture" />
+        <img src={`${imgdir}image27.jpg`} alt="Adding the lava texture" />
 
         <p>
           Dry time: 24 hours (that’s the greatest waiting time of the project so
           I filled it with scenery painting for instance).
         </p>
 
-        <img src={image28} alt="Waiting for the caulking to dry" />
+        <img src={`${imgdir}image28.jpg`} alt="Waiting for the caulking to dry" />
 
         <p>I also added a Star Wars easter egg ?</p>
 
-        <img src={image29} alt="Private Skywalker trying to swim in lava" />
+        <img src={`${imgdir}image29.jpg`} alt="Private Skywalker trying to swim in lava" />
 
         <p>The volcano took 48 hours to dry because of the thickness of the coat.</p>
 
-        <img src={image30} alt="The volcano is drying" />
+        <img src={`${imgdir}image30.jpg`} alt="The volcano is drying" />
 
         <p>I covered this lava with yellow paint, leaving white spots in some places.</p>
 
-        <img src={image31} alt="Painting the lava, yellow" />
+        <img src={`${imgdir}image31.jpg`} alt="Painting the lava, yellow" />
 
         <p>
           I brushed some orange and red paint, and I also brushed them on the
           sides of the channels.
         </p>
 
-        <img src={image32} alt="Painting the lava, orange" />
+        <img src={`${imgdir}image32.jpg`} alt="Painting the lava, orange" />
 
         <p>I finished with a drybrush of black paint on the topmost part of the lava.</p>
 
-        <img src={image33} alt="Painting the lava, finish" />
+        <img src={`${imgdir}image33.jpg`} alt="Painting the lava, finish" />
       </section>
 
       <section className="Content">
@@ -352,19 +307,19 @@ export default () => (
 
         <p>Here is the table with a lot of minis so you can grasp how it feels to play on it.</p>
 
-        <img src={image34} alt="Finished table with minis on it" />
-        <img src={image35} alt="Finished table with minis on it" />
-        <img src={image36} alt="Finished table with minis on it" />
-        <img src={image37} alt="Finished table with minis on it" />
-        <img src={image38} alt="Finished table with minis on it" />
-        <img src={image39} alt="Finished table with minis on it" />
-        <img src={image40} alt="Finished table with minis on it" />
-        <img src={image41} alt="Finished table with minis on it" />
-        <img src={image42} alt="Finished table with minis on it" />
-        <img src={image43} alt="Finished table with minis on it" />
-        <img src={image44} alt="Finished table with minis on it" />
-        <img src={image45} alt="Finished table with minis on it" />
-        <img src={image46} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image34.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image35.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image36.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image37.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image38.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image39.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image40.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image41.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image42.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image43.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image44.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image45.jpg`} alt="Finished table with minis on it" />
+        <img src={`${imgdir}image46.jpg`} alt="Finished table with minis on it" />
       </section>
 
       <section className="Content">

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import profilePicture from '~/img/profile.jpg';
 import './Header.styl';
 
 export default () => (
@@ -10,7 +9,7 @@ export default () => (
       <div className="fx-row fx-wrap fx-center-xs fx-middle-xs">
         <div className="fx-col-xs-6 fx-col-sm-3">
           <Link to="/" title="Back to the home page">
-            <img className="Header__image" src={profilePicture} alt="My profile pic!" />
+            <img className="Header__image" src="/img/profile.jpg" alt="My profile pic!" />
           </Link>
         </div>
 

@@ -4,8 +4,7 @@ import View from '~/components/View.jsx';
 import content from '~/content';
 import PostHeader from '~/components/PostHeader.jsx';
 
-import image1 from '~/img/posts/learnandshare/savingtime.jpg';
-import image2 from '~/img/posts/learnandshare/learntolearn.jpg';
+const imgdir = '/img/posts/learnandshare/';
 
 export default () => (
   <View>
@@ -85,7 +84,7 @@ export default () => (
         </ul>
 
         <figure>
-          <img src={image1} alt="Is it worth the time?" />
+          <img src={`${imgdir}savingtime.jpg`} alt="Is it worth the time?" />
           <figcaption><em>And it can make you save a lot of time…</em></figcaption>
         </figure>
       </section>
@@ -130,7 +129,7 @@ export default () => (
 
         <h2>Learn how to learn</h2>
 
-        <img src={image2} alt="Metalearning" />
+        <img src={`${imgdir}learntolearn.jpg`} alt="Metalearning" />
 
         <p>
           Let’s go meta. Learning allow you to gather knowledge, but you want to

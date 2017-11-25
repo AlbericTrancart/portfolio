@@ -1,36 +1,36 @@
-const path = require('path');
-const webpack = require('webpack');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import webpack from 'webpack';
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import dirs from './app/dirs';
 
 module.exports = {
   devtool: 'eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    path.join(__dirname, './app/index.jsx'),
+    dirs.main,
   ],
   resolve: {
     alias: {
       app: 'app',
     },
     modules: [
-      path.join(__dirname, '/app'),
+      dirs.src,
       'node_modules',
     ],
     extensions: ['.js', '.jsx'],
   },
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: dirs.dist,
     filename: '[name].js',
     publicPath: '/',
   },
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: path.join(__dirname, '/app/img/profile.jpg'),
+      logo: dirs.favicon,
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
+      template: '!!raw-loader!app/index.tpl.html',
       inject: 'body',
       filename: 'index.html',
     }),
@@ -54,9 +54,6 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
-    }, {
-      test: /\.(png|jpe?g|gif)$/,
-      loader: 'url-loader?limit=8192', // inline base64 URLs for <=8k images, direct URLs for the rest
     }, {
       test: /\.styl$/,
       loader: 'style-loader!css-loader!stylus-loader',

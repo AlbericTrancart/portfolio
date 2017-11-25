@@ -5,10 +5,7 @@ import View from '~/components/View.jsx';
 import content from '~/content';
 import PostHeader from '~/components/PostHeader.jsx';
 
-import image1 from '~/img/posts/whymarsmatters/wastemoney.jpg';
-import image2 from '~/img/posts/whymarsmatters/moonaldrin.jpg';
-import image3 from '~/img/posts/whymarsmatters/onu.jpg';
-import image4 from '~/img/posts/whymarsmatters/bfr.jpg';
+const imgdir = '/img/posts/whymarsmatters/';
 
 export default () => (
   <View>
@@ -171,7 +168,7 @@ export default () => (
         <h2>Economy</h2>
 
         <figure>
-          <img src={image1} alt="Is space a waste of money?" />
+          <img src={`${imgdir}wastemoney.jpg`} alt="Is space a waste of money?" />
           <figcaption><em>Is space a waste of money?</em></figcaption>
         </figure>
 
@@ -286,7 +283,7 @@ export default () => (
         </p>
 
         <figure>
-          <img src={image2} alt="Aldrin on the Moon" />
+          <img src={`${imgdir}moonaldrin.jpg`} alt="Aldrin on the Moon" />
           <figcaption>Aldrin on the Moon – Millions of new scientists and engineers!</figcaption>
         </figure>
 
@@ -317,7 +314,7 @@ export default () => (
         </p>
 
         <figure>
-          <img src={image3} alt="The ONU HQs in New York" />
+          <img src={`${imgdir}onu.jpg`} alt="The ONU HQs in New York" />
           <figcaption>
             World leaders will need to learn how to make tough global decisions
           </figcaption>
@@ -409,7 +406,7 @@ export default () => (
           But that’s a story for another day.
         </p>
 
-        <img src={image4} alt="The Big Fucking Rocket" />
+        <img src={`${imgdir}bfr.jpg`} alt="The Big Fucking Rocket" />
 
         <h3>Sources and inspiration:</h3>
 

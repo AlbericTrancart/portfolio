@@ -6,7 +6,7 @@ import moment from 'moment';
 import structs from '~/structs';
 
 const PostHeader = (props) => {
-  const image = require(`img/${props.data.image}`);
+  const image = `/img/${props.data.image}`;
   const date = moment(props.data.date);
   return (
     <header>
