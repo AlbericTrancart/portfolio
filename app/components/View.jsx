@@ -12,6 +12,7 @@ const View = props => (
       <meta property="og:title" content="Albéric Trancart" />
       <meta property="og:image" content="https://alberic.trancart.net/img/profile.jpg" />
       <meta property="og:url" content="https://alberic.trancart.net" />
+      <link rel="canonical" href="https://alberic.trancart.net" />
       <meta
         property="og:description"
         content="Developer, life hacker, space enthusiast and more!"

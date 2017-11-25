@@ -23,8 +23,9 @@ const PostHeader = (props) => {
           <Helmet>
             <meta property="og:title" content={props.data.title} />
             <meta property="og:description" content={props.data.subtitle} />
-            <meta property="og:url" content={`https://trancart.net${props.data.url}`} />
-            <meta property="og:image" content={`https://trancart.net${image}`} />
+            <meta property="og:url" content={`https://alberic.trancart.net${props.data.url}`} />
+            <link rel="canonical" href={`https://alberic.trancart.net${props.data.url}`} />
+            <meta property="og:image" content={`https://alberic.trancart.net${image}`} />
           </Helmet>
         </h1>
       ) : (
