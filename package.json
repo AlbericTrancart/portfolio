@@ -7,7 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "eslint .",
-    "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
+    "build": "rimraf dist && export NODE_ENV='production' && webpack --config ./webpack.prod.config.js --progress --profile --colors",
+    "start:prod": "export NODE_ENV='production' && node app.js",
     "start": "node app.js",
     "eslint": "eslint . --fix",
     "heroku-postbuild": "yarn build"
