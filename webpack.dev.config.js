@@ -43,7 +43,7 @@ module.exports = {
     rules: [{
       enforce: 'pre',
       test: /\.jsx?$/,
-      exclude: ['/node_modules/', 'app/index.js'],
+      exclude: ['/node_modules/'],
       loader: 'eslint-loader',
       options: {
         configFile: '.eslintrc',
