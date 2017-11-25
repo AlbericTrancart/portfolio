@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 
+import PostHeader from '~/components/PostHeader.jsx';
+import Video from '~/components/Video.jsx';
 import View from '~/components/View.jsx';
 import content from '~/content';
-import PostHeader from '~/components/PostHeader.jsx';
 
 const imgdir = '/img/posts/whymarsmatters/';
 
@@ -367,7 +367,7 @@ export default () => (
           first step. We are wanderers. We need places to wander.
         </p>
 
-        <ReactPlayer className="Video" url="https://www.youtube.com/embed/YH3c1QZzRK4?autoplay=0&loop=0" />
+        <Video youtubeId="YH3c1QZzRK4" />
 
         <p>
           Also, there is that monument building
