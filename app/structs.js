@@ -10,6 +10,7 @@ export default {
   project: {
     id: '',
     title: '',
+    description: '',
     image: '',
     url: '',
   },

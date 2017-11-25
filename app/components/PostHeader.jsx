@@ -1,7 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import moment from 'moment';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 import structs from '~/structs';
 
@@ -18,6 +19,13 @@ const PostHeader = (props) => {
           <Link className="Link Link--no-underline" to={props.data.url}>
             {props.data.title}
           </Link>
+
+          <Helmet>
+            <meta property="og:title" content={props.data.title} />
+            <meta property="og:description" content={props.data.subtitle} />
+            <meta property="og:url" content={`https://trancart.net${props.data.url}`} />
+            <meta property="og:image" content={`https://trancart.net${image}`} />
+          </Helmet>
         </h1>
       ) : (
         <h3>

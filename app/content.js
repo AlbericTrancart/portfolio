@@ -42,36 +42,46 @@ export default {
   projects: [{
     id: 1,
     title: 'Space Hulk Mod',
+    description: 'A total conversion mod for Dawn Of War II',
     image: 'projects/spacehulkmod/oglogo.jpg',
     url: '/projects/space-hulk-mod',
   }, {
     id: 2,
     title: 'Wooden Bridge',
+    description: 'A one week design challenge to create a wooden bridge',
     image: 'projects/woodenbridge/oglogo.jpg',
     url: '/projects/wooden-bridge',
   }, {
     id: 3,
     title: 'KarambaToSofistik',
+    description: 'A C# plugin for a parametric engineering & structural modeling software',
     image: 'projects/karambatosofistik/oglogo.jpg',
     url: '/projects/karamba-to-sofistik',
   }, {
     id: 4,
     title: 'uPont',
+    description: 'The student intranet of the École Nationale des Ponts et Chaussées',
     image: 'projects/upont/oglogo.jpg',
     url: '/projects/upont',
   }, {
     id: 5,
     title: 'Lava Gaming Board',
+    description: 'A lava gaming board to wage great battles of minis',
     image: 'posts/lavagamingboard/oglogo.jpg',
-    url: '/projects/lava-gaming-board',
+    url: '/2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week',
   }, {
     id: 6,
     title: 'SpaceX Stats',
+    description: `SpaceX Stats is the ultimate place to keep track of SpaceX's
+                  achievements into providing cheaper access to space and making
+                  human life multiplanetary`,
     image: 'projects/spacexstats/oglogo.jpg',
     url: '/projects/spacex-stats',
   }, {
     id: 7,
     title: 'GéoSchool',
+    description: `An entrepreneurship project enabling the sharing of geolocated
+                  experiences between the students of a school`,
     image: 'projects/geoschool/oglogo.jpg',
     url: '/projects/geoschool',
   }],
