@@ -31,9 +31,9 @@ export default {
     date: '2016-11-08',
   }, {
     id: 4,
-    title: 'Prevent the CSS being a chore',
+    title: 'Prevent the CSS from being a chore',
     subtitle: `Last month I presented a talk @ HumanTalks Paris about CSS and
-              what you can do to prevent it being a chore. Having unreadable CSS
+              what you can do to prevent it from being a chore. Having unreadable CSS
               files of thousands of lines is neither fun nor good for business.`,
     url: '/2017/11/prevent-the-css-being-a-chore',
     image: 'posts/humantalkscss/oglogo.jpg',
@@ -71,7 +71,7 @@ export default {
     url: '/projects/spacex-stats',
   }, {
     id: 7,
-    title: 'GeoSchool',
+    title: 'GéoSchool',
     image: 'projects/geoschool/oglogo.jpg',
     url: '/projects/geoschool',
   }],
