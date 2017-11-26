@@ -62,7 +62,7 @@ export default {
     title: 'Lava Gaming Board',
     description: 'A lava gaming board to wage great battles of minis',
     image: 'posts/lavagamingboard/oglogo.jpg',
-    url: '/2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week',
+    url: '/projects/lava-gaming-board',
   }, {
     id: 5,
     title: 'SpaceX Stats',
