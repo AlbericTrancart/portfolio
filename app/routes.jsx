@@ -10,7 +10,6 @@ import HumanTalksCSSPost from '~/views/posts/HumanTalksCSS.jsx';
 // Projects
 import SpaceHulkModProject from '~/views/projects/SpaceHulkMod.jsx';
 import WoodenBridgeProject from '~/views/projects/WoodenBridge.jsx';
-import KarambaToSofistikProject from '~/views/projects/KarambaToSofistik.jsx';
 import UPontProject from '~/views/projects/UPont.jsx';
 import LavaGamingBoardProject from '~/views/projects/LavaGamingBoard.jsx';
 import SpaceXStatsProject from '~/views/projects/SpaceXStats.jsx';
@@ -32,11 +31,10 @@ export default (
       { /* Projects */ }
       <Route path={content.projects[0].url} component={SpaceHulkModProject} />
       <Route path={content.projects[1].url} component={WoodenBridgeProject} />
-      <Route path={content.projects[2].url} component={KarambaToSofistikProject} />
-      <Route path={content.projects[3].url} component={UPontProject} />
-      <Route path={content.projects[4].url} component={LavaGamingBoardProject} />
-      <Route path={content.projects[5].url} component={SpaceXStatsProject} />
-      <Route path={content.projects[6].url} component={GeoSchoolProject} />
+      <Route path={content.projects[2].url} component={UPontProject} />
+      <Route path={content.projects[3].url} component={LavaGamingBoardProject} />
+      <Route path={content.projects[4].url} component={SpaceXStatsProject} />
+      <Route path={content.projects[5].url} component={GeoSchoolProject} />
 
       { /* Other routes */ }
       <Route path="*" component={HomeView} />

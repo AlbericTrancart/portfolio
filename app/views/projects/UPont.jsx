@@ -7,7 +7,7 @@ import content from '~/content';
 export default () => (
   <View>
     <article>
-      <ProjectHeader data={content.projects[3]} />
+      <ProjectHeader data={content.projects[2]} />
 
       <section className="Content">
         <img src="/img/projects/upont/oglogo.jpg" alt="The home page of uPont" />
@@ -21,9 +21,9 @@ export default () => (
           12 themes, achievements and even a minigame.
         </p>
 
-        <img src="/img/projects/upont/demo1.jpg" alt="The home page of uPont" />
-        <img src="/img/projects/upont/demo2.jpg" alt="The home page of uPont" />
-        <img src="/img/projects/upont/demo3.jpg" alt="The home page of uPont" />
+        <img src="/img/projects/upont/demo1.jpg" alt="The main page with club events" />
+        <img src="/img/projects/upont/demo2.jpg" alt="The student directory" />
+        <img src="/img/projects/upont/demo3.jpg" alt="A page of a club" />
 
         <p>
           This was my first big web project and we gathered around us a team of

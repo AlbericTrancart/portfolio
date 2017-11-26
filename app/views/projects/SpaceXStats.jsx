@@ -7,7 +7,7 @@ import content from '~/content';
 export default () => (
   <View>
     <article>
-      <ProjectHeader data={content.projects[5]} />
+      <ProjectHeader data={content.projects[4]} />
 
       <section className="Content">
         <p>
