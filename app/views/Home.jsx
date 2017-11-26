@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import content from '~/content';
 import PostPreview from '~/components/PostPreview.jsx';
@@ -14,6 +15,7 @@ export default () => {
     <View>
       <section>
         <h2>Bio</h2>
+
         <p className="mtop">
           Currently CTO @ GéoSchool, I studied civil engineering at the École
           Nationale des Ponts et Chaussées (ENPC). I am passionate about a
@@ -43,8 +45,9 @@ export default () => {
           </em>
         </p>
       </section>
+
       <section className="mtop-big">
-        <h2>Projects</h2>
+        <ScrollableAnchor id="projects"><h2>Projects</h2></ScrollableAnchor>
 
         <div className="fx-row fx-wrap mtop">
           {projects.map(value => (
@@ -56,8 +59,10 @@ export default () => {
           ))}
         </div>
       </section>
+
       <section className="mtop-big">
-        <h2>Posts</h2>
+        <ScrollableAnchor id="posts"><h2>Posts</h2></ScrollableAnchor>
+
         {posts.map(value => (
           <PostPreview
             key={value.id}
