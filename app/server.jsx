@@ -1,8 +1,10 @@
+import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import RootStatic from '~/components/RootStatic.jsx';
+import { StaticRouter } from 'react-router-dom';
+
 import dirs from '~/dirs';
-import express from 'express';
+import routes from '~/routes.jsx';
 
 const app = express();
 const port = (process.env.PORT || 5000);
@@ -58,9 +60,19 @@ if (process.env.NODE_ENV !== 'production') {
   app.set('views', dirs.dist);
   app.use(express.static(dirs.dist));
   app.use((req, res) => {
-    const html = renderToString(<RootStatic location={req.url} />);
+    const context = {};
+    const html = renderToString((
+      <StaticRouter location={req.url} context={context}>
+        {routes}
+      </StaticRouter>
+    ));
 
-    res.status(200).render('index', { root: html });
+    if (context.url) {
+      res.writeHead(302, { Location: context.url });
+      res.end();
+    } else {
+      res.status(200).render('index', { root: html });
+    }
   });
 }
 

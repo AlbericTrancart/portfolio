@@ -26,7 +26,7 @@ export default () => (
           the SpaceX Stats website was not maintained anymore I decided to recode
           the front-end with React, using <a className="Link" href="https://github.com/r-spacex/SpaceX-API" title="The API of the SpaceX subreddit" target="_blank" rel="noreferrer noopener">r/spacex’s API</a> to collect
           data about the launches. I also added some charts and improved the existing
-          ones and the user experience on movile over the original website. You can also
+          ones and the user experience on mobile over the original website. You can also
           visit <a className="Link" href="https://github.com/r-spacex/spacexstats-react" title="The repo of the website" target="_blank" rel="noreferrer noopener">the Github repository here</a>.
         </p>
 

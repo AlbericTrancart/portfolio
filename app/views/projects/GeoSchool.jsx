@@ -14,8 +14,8 @@ export default () => (
 
         <p>
           In 2015, a friend of mine had a problem: he was looking for an internship
-          in Sweden and was looking for feedback from people who went there but although
-          these people existed and surely met him on a daily basis, he was unable to find them.
+          in Sweden and seeking feedback from people who went there. Although these
+          people existed and surely met him on a daily basis, he was unable to find them.
           After gathering useful information (like: who went where, the cost of
           living, the temperature, the price of a beer… <em>useful information</em>)
           amongst students with a Google Sheet which had a huge success, he decided
@@ -30,7 +30,7 @@ export default () => (
           fulltime if he could find a way to answer this need elsewhere. Another
           alumni of our school and I joined the project soon after. GéoPonts became
           GéoSchool. Today, we are deploying these platforms in french engineering
-          school, helping the students building their professional project and
+          schools, helping the students building their professional project and
           puting them in relation with cool companies they didn’t know existed.
         </p>
 
