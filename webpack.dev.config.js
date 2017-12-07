@@ -32,7 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: '!!raw-loader!app/index.tpl.html',
       inject: 'body',
-      filename: 'index.html',
+      filename: 'index.ejs',
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({

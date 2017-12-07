@@ -21,6 +21,7 @@ const PostHeader = (props) => {
           </Link>
 
           <Helmet>
+            <title>{props.data.title} &bull; Albéric Trancart</title>
             <meta property="og:title" content={props.data.title} />
             <meta property="og:description" content={props.data.subtitle} />
             <meta property="og:url" content={`https://alberic.trancart.net${props.data.url}`} />

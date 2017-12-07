@@ -1,5 +1,7 @@
+import ejs from 'ejs';
 import express from 'express';
 import React from 'react';
+import Helmet from 'react-helmet';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 
@@ -9,6 +11,8 @@ import routes from '~/routes.jsx';
 const app = express();
 const port = (process.env.PORT || 5000);
 app.use('/img', express.static(dirs.img));
+app.set('view engine', 'ejs');
+app.set('views', dirs.dist);
 
 if (process.env.NODE_ENV !== 'production') {
   // Dev env
@@ -51,13 +55,14 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
   app.get('*', (req, res) => {
-    res.write(middleware.fileSystem.readFileSync(dirs.index));
-    res.end();
+    res.send(ejs.render(middleware.fileSystem.readFileSync(dirs.index, 'utf8'), {
+      root: '',
+      title: '',
+      meta: '',
+    }));
   });
 } else {
   // Prod env
-  app.set('view engine', 'ejs');
-  app.set('views', dirs.dist);
   app.use(express.static(dirs.dist));
   app.use((req, res) => {
     const context = {};
@@ -66,12 +71,17 @@ if (process.env.NODE_ENV !== 'production') {
         {routes}
       </StaticRouter>
     ));
+    const head = Helmet.rewind();
 
     if (context.url) {
       res.writeHead(302, { Location: context.url });
       res.end();
     } else {
-      res.status(200).render('index', { root: html });
+      res.status(200).render('index', {
+        root: html,
+        title: head.title.toString(),
+        meta: head.meta.toString(),
+      });
     }
   });
 }
