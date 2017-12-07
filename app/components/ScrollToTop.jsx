@@ -1,9 +1,11 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import React from 'react';
+import ReactGA from 'react-ga';
+import { withRouter } from 'react-router-dom';
 
 class ScrollToTop extends React.Component {
   componentDidUpdate(prevProps) {
+    ReactGA.pageview(this.props.location.pathname);
     if (this.props.location !== prevProps.location) {
       window.scrollTo(0, 0);
     }
