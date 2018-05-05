@@ -22,7 +22,7 @@ export default class HomeView extends React.Component {
           <h2>Bio</h2>
 
           <p className="mtop">
-            Currently CTO @ GéoSchool, I studied civil engineering at the École
+            Currently web developer @ Theodo, I studied civil engineering at the École
             Nationale des Ponts et Chaussées (ENPC). I am passionate about a
             variety of topics, including:
           </p>
