@@ -26,17 +26,14 @@ module.exports = {
       filename: 'index.ejs',
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-        screw_ie8: true,
-      },
-    }),
     // plugin for passing in data to the js, like what NODE_ENV we are in.
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
   ],
+  optimization: {
+    minimize: true,
+  },
   module: {
     rules: [{
       enforce: 'pre',

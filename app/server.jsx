@@ -86,4 +86,5 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
+console.log(`STARTING SERVER ON PORT ${port}`);
 app.listen(port);
