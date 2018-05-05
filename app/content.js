@@ -31,7 +31,7 @@ export default {
     date: '2016-11-08',
   }, {
     id: 4,
-    title: 'Prevent the CSS from being a chore',
+    title: 'Prevent The CSS From Being A Chore',
     subtitle: `Last month I presented a talk @ HumanTalks Paris about CSS and
               what you can do to prevent it from being a chore. Having unreadable CSS
               files of thousands of lines is neither fun nor good for business.`,

@@ -30,7 +30,7 @@ export default () => (
           visit <a className="Link" href="https://github.com/r-spacex/spacexstats-react" title="The repo of the website" target="_blank" rel="noreferrer noopener">the Github repository here</a>.
         </p>
 
-        <h2 style={{ textAlign: 'center' }}><a className="Link" href="http://www.spacexstats.xyz" title="SpaceX Stats">Visit the website</a></h2>
+        <h2 style={{ textAlign: 'center' }}><a className="Link" href="http://www.spacexstats.xyz" title="SpaceX Stats" target="_blank" rel="noreferrer noopener">Visit the website</a></h2>
       </section>
     </article>
   </View>

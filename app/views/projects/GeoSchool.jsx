@@ -47,6 +47,8 @@ export default () => (
         </p>
 
         <img src="/img/projects/geoschool/team.jpg" alt="GéoSchool's team" />
+
+        <h2 style={{ textAlign: 'center' }}><a className="Link" href="https://demo.geoschool.fr" title="Visit the demo website" target="_blank" rel="noreferrer noopener">Visit the demo website</a></h2>
       </section>
     </article>
   </View>

@@ -5,6 +5,7 @@ const webpack = require('webpack');
 const dirs = require('./app/dirs');
 
 module.exports = {
+  mode: 'production',
   devtool: 'source-map',
   entry: [
     dirs.main,
