@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal website created with NextJS.
+Personal website created with React.
 
 ## Install
 1. Run `yarn`

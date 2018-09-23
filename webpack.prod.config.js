@@ -21,9 +21,9 @@ module.exports = {
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: '!!raw-loader!app/index.tpl.html',
+      template: 'app/index.tpl.html',
       inject: 'body',
-      filename: 'index.ejs',
+      filename: 'index.html',
     }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
     // plugin for passing in data to the js, like what NODE_ENV we are in.
