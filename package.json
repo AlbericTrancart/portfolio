@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "eslint .",
-    "build": "rimraf dist && export NODE_ENV='production' && webpack --config ./webpack.prod.config.js --progress --profile --colors",
+    "build": "rimraf dist && mkdir dist && cp -r app/img dist/img && export NODE_ENV='production' && webpack --config ./webpack.prod.config.js --progress --profile --colors",
     "start": "node main.js",
     "start:prod": "export NODE_ENV='production' && node main.js",
     "eslint": "eslint . --fix",
