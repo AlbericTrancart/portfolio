@@ -1,60 +1,51 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const dirs = require('./app/dirs');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+const dirs = require("./app/dirs");
 
 module.exports = {
-  mode: 'production',
-  devtool: 'source-map',
-  entry: [
-    dirs.main,
-  ],
+  mode: "production",
+  devtool: "source-map",
+  entry: [dirs.main],
   output: {
     path: dirs.dist,
-    filename: '[name]-[hash].js',
-    publicPath: '/',
+    filename: "[name]-[hash].js",
+    publicPath: "/"
   },
   plugins: [
     new FaviconsWebpackPlugin({
       logo: dirs.favicon,
-      inject: true,
+      inject: true
     }),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
-      inject: 'body',
-      filename: 'index.html',
+      template: "app/index.tpl.html",
+      inject: "body",
+      filename: "index.html"
     }),
-    new ExtractTextPlugin('[name]-[hash].min.css'),
+    new ExtractTextPlugin("[name]-[hash].min.css"),
     // plugin for passing in data to the js, like what NODE_ENV we are in.
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-    }),
+      "process.env.NODE_ENV": JSON.stringify("production")
+    })
   ],
   optimization: {
-    minimize: true,
+    minimize: true
   },
   module: {
-    rules: [{
-      enforce: 'pre',
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader',
-      options: {
-        configFile: '.eslintrc',
-        failOnWarning: false,
-        failOnError: false,
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       },
-    }, {
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-    }, {
-      test: /\.styl$/,
-      loader: ExtractTextPlugin.extract({
-        fallback: { loader: 'style-loader' },
-        use: ['css-loader', { loader: 'stylus-loader' }],
-      }),
-    }],
-  },
+      {
+        test: /\.styl$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: { loader: "style-loader" },
+          use: ["css-loader", { loader: "stylus-loader" }]
+        })
+      }
+    ]
+  }
 };
