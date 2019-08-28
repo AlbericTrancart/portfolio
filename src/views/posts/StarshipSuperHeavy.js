@@ -1,6 +1,7 @@
 import React from "react";
 
 import PostHeader from "components/PostHeader";
+import Video from "components/Video";
 import content from "content";
 
 const imgdir = "/img/posts/spacexstarship/";
@@ -171,9 +172,7 @@ export default () => (
         </strong>
         .
       </p>
-      <figure>
-        <img src={`${imgdir}starhopper.jpg`} alt="Starhopper hopping" />
-      </figure>
+      <Video youtubeId="bYb3bfA6_sQ" />
       <h3>Phase 3 - Starship prototypes - HAPPENING RIGHT NOW</h3>
       <p>
         The next step is to test Starship in Earth's upper atmosphere, to

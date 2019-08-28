@@ -12,13 +12,13 @@ module.exports = {
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`
+    //   }
+    // },
 
     // Assets
     `gatsby-transformer-sharp`,
