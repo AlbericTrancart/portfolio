@@ -115,8 +115,8 @@ export default () => (
           SpaceX has already proven that landing rocket boosters and reusing
           them is possible <em>and</em> profitable.
         </strong>{" "}
-        However, SpaceX has only reused first stages so far, which means that a
-        lot of costly parts must still be manufactured for each launch.
+        However, the company has only reused first stages so far, which means
+        that a lot of costly parts must still be manufactured for each launch.
       </p>
       <figure>
         <img
@@ -152,9 +152,9 @@ export default () => (
       <h3>Phase 1 - Raptor engine development - DONE</h3>
       <p>
         The Raptor engine is the rocket engine that powers Starship. They are{" "}
-        <em>really, really high tech</em> by rocket engine standards and the
-        rocket will have more than 30 of them. As it's the single most
-        complicated system in the rocket, so development began around 2012.
+        <em>super high tech</em> by rocket engine standards and Super
+        Heavy/Starship will have more than 40 of them. As it's the single most
+        complicated system in the rocket, its development began around 2012.
         After a lot of testing,{" "}
         <strong>Raptor has entered mass production in 2019.</strong>
       </p>
