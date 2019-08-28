@@ -1,6 +1,5 @@
-.vagrant/
+.cache/
 node_modules/
-dist/
+public/
 
 *.log
-*.retry

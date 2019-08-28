@@ -1,9 +1,9 @@
-import 'babel-polyfill';
-import React from 'react';
-import { render } from 'react-dom';
-import ReactGA from 'react-ga';
+import "babel-polyfill";
+import React from "react";
+import { render } from "react-dom";
+import ReactGA from "react-ga";
 
-import Root from '~/components/RootBrowser.jsx';
+import Root from "components/RootBrowser";
 
 window.BaseRouter = {
   init: function init(mountpoint) {
@@ -13,14 +13,13 @@ window.BaseRouter = {
     // If hot, reimport the module
     if (module.hot) {
       debug = true;
-      module.hot.accept('./components/RootBrowser.jsx', () => {
-        const NewRoot = require('~/components/RootBrowser.jsx').default;
+      module.hot.accept("./components/RootBrowser", () => {
+        const NewRoot = require("components/RootBrowser").default;
         render(<NewRoot />, document.getElementById(mountpoint));
       });
       return;
     }
-    ReactGA.initialize('UA-110877372-1', { debug });
-    ReactGA.pageview('/');
-  },
+    ReactGA.pageview("/");
+  }
 };
-window.BaseRouter.init('root');
+window.BaseRouter.init("root");

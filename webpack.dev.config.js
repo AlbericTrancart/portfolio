@@ -12,7 +12,7 @@ module.exports = {
       app: "app"
     },
     modules: [dirs.src, "node_modules"],
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ""]
   },
   output: {
     path: dirs.dist,
@@ -37,7 +37,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\?$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       },
