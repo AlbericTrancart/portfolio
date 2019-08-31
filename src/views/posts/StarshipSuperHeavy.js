@@ -83,7 +83,7 @@ export default () => (
         <li>
           A permanent scientific base on the Moon - imagine your child doing a
           PhD at Moon Base Alpha, joining the 1,000 other scientists there for a
-          two year stay
+          two-year stay
         </li>
         <li>
           A Mars colony - you regularly exchange video messages with your friend
@@ -226,8 +226,8 @@ export default () => (
       </figure>
       <h3>Phase 6 - First crewed trip around the Moon - 2023</h3>
       <p>
-        After putting cargo in orbit, the next challenge will be to develop the
-        crewed version and send people with it.{" "}
+        After that, the next challenge will be to develop the crewed version and
+        send people with it.{" "}
         <strong>
           Yasuka Maezawa, a Japanese billionaire, has already bought the first
           Starship crewed flight to go around the Moon with artists
@@ -254,10 +254,9 @@ export default () => (
       <h2>My take on the subject</h2>
       <p>
         A Moon base and Mars colony in our lifetimes?
-        <em>Hell sure it will happen!</em> But obviously, the 2024 goal seems
+        <em>Sure as hell it will happen!</em> But obviously, the 2024 goal seems
         really ambitious. I think the crewed version will take longer to develop
-        as human-rating a rocket system for a 3 years journey will not be
-        simple.
+        as human-rating a rocket system for a 3-year journey will not be simple.
         <strong>
           My bet is that the first cargo Starship will land on Mars in 2024 and
           that the first human footprints will happen before 2030.
