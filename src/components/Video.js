@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import ReactPlayer from "react-player";
 
@@ -12,9 +11,5 @@ const Video = ({ youtubeId }) => (
     />
   </div>
 );
-
-Video.propTypes = {
-  youtubeId: PropTypes.string.isRequired
-};
 
 export default Video;

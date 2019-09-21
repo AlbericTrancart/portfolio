@@ -1,10 +1,7 @@
 import moment from "moment";
-import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
-
-import structs from "structs";
 
 const PostHeader = ({
   data: { image, date, title, subtitle, url },
@@ -50,15 +47,6 @@ const PostHeader = ({
       </Link>
     </header>
   );
-};
-
-PostHeader.defaultProps = {
-  mainPage: false
-};
-
-PostHeader.propTypes = {
-  data: PropTypes.shape(structs.post).isRequired,
-  mainPage: PropTypes.bool
 };
 
 export default PostHeader;

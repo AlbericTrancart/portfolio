@@ -1,9 +1,6 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
-
-import structs from "structs";
 
 const ProjectHeader = ({ data: { title, description, image, url } }) => (
   <header className="text-center">
@@ -29,9 +26,5 @@ const ProjectHeader = ({ data: { title, description, image, url } }) => (
     </h1>
   </header>
 );
-
-ProjectHeader.propTypes = {
-  data: PropTypes.shape(structs.project).isRequired
-};
 
 export default ProjectHeader;

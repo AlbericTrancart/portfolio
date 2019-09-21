@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
-
-import structs from "structs";
 import PostHeader from "./PostHeader";
 
 const PostPreview = ({ data: post, className, endDivider }) => (
@@ -17,16 +14,5 @@ const PostPreview = ({ data: post, className, endDivider }) => (
     {endDivider && <hr className="Divider mtop" />}
   </article>
 );
-
-PostPreview.defaultProps = {
-  className: "",
-  endDivider: false
-};
-
-PostPreview.propTypes = {
-  className: PropTypes.string,
-  data: PropTypes.shape(structs.post).isRequired,
-  endDivider: PropTypes.bool
-};
 
 export default PostPreview;

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 const Footer = ({ location }) => {
@@ -19,7 +18,8 @@ const Footer = ({ location }) => {
         </Link>
       )}
       <hr className="Divider" />
-      Made with React, ❤ and other hipster technologies.<br />
+      Made with React, ❤ and other hipster technologies.
+      <br />
       Design philosophy inspired by{" "}
       <a
         className="Footer__link Link"
@@ -39,13 +39,10 @@ const Footer = ({ location }) => {
         title="This site is a better motherfucking website"
       >
         bettermotherfuckingwebsite.com
-      </a>.
+      </a>
+      .
     </footer>
   );
-};
-
-Footer.propTypes = {
-  location: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 export default Footer;
