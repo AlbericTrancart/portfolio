@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-mdx`,
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
