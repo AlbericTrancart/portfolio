@@ -1,9 +1,9 @@
 // Posts
-import LearnAndSharePost from "views/posts/LearnAndShare";
-import WhyMarsMattersPost from "views/posts/WhyMarsMatters";
-import LavaGamingBoardPost from "views/posts/LavaGamingBoard";
-import HumanTalksCSSPost from "views/posts/HumanTalksCSS";
-import StarshipSuperHeavy from "views/posts/StarshipSuperHeavy";
+import LearnAndSharePost from "views/posts/1-LearnAndShare";
+import WhyMarsMattersPost from "views/posts/2-WhyMarsMatters";
+import LavaGamingBoardPost from "views/posts/3-LavaGamingBoard";
+import HumanTalksCSSPost from "views/posts/4-HumanTalksCSS";
+import StarshipSuperHeavy from "views/posts/5-StarshipSuperHeavy";
 
 export default {
   1: LearnAndSharePost,
