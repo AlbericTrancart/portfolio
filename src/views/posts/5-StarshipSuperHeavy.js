@@ -253,10 +253,10 @@ export default () => (
       </figure>
       <h2>My take on the subject</h2>
       <p>
-        A Moon base and Mars colony in our lifetimes?
+        A Moon base and Mars colony in our lifetimes?{" "}
         <em>Sure as hell it will happen!</em> But obviously, the 2024 goal seems
         really ambitious. I think the crewed version will take longer to develop
-        as human-rating a rocket system for a 3-year journey will not be simple.
+        as human-rating a rocket system for a 3-year journey will not be simple.{" "}
         <strong>
           My bet is that the first cargo Starship will land on Mars in 2024 and
           that the first human footprints will happen before 2030.
@@ -274,6 +274,16 @@ export default () => (
       </p>
       <h2>If you want to...</h2>
       <ul>
+        <li>
+          See the update timeline, you can checkout{" "}
+          <a
+            href="https://starshiptimeline.space"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            starshiptimeline.space
+          </a>
+        </li>
         <li>
           Ask any question, you can tweet them{" "}
           <a

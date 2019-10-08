@@ -18,19 +18,9 @@ const Footer = ({ location }) => {
         </Link>
       )}
       <hr className="Divider" />
-      Made with React, ❤ and other hipster technologies.
+      Made with GatsbyJS, ❤ and other hipster technologies.
       <br />
       Design philosophy inspired by{" "}
-      <a
-        className="Footer__link Link"
-        target="_blank"
-        rel="noreferrer noopener"
-        href="https://medium.com"
-        title="Medium"
-      >
-        medium.com
-      </a>{" "}
-      and{" "}
       <a
         className="Footer__link Link"
         target="_blank"
