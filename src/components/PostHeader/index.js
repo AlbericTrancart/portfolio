@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import slugify from "slugify";
 import format from "date-fns/format";
 import Link from "components/Link";
 import Tag from "components/Tag";
@@ -45,7 +46,7 @@ const PostHeader = ({
         {format(new Date(date), "MMMM dd, yyyy")}
       </PostDate>
       {tags.map(tag => (
-        <Tag key={tag} to={`tag/${tag}`}>
+        <Tag key={tag} to={`tag/${slugify(tag, { lower: true })}`}>
           #{tag}
         </Tag>
       ))}
