@@ -825,7 +825,6 @@ h3 {
 .Content h3,
 .Content p,
 .Content ul,
-.Content img,
 .Content blockquote,
 .Content .Divider,
 .Content .Video {
@@ -837,15 +836,11 @@ h3 {
   .Content h3,
   .Content p,
   .Content ul,
-  .Content img,
   .Content blockquote,
   .Content .Divider,
   .Content .Video {
     margin-top: 2rem;
   }
-}
-.Content img {
-  max-width: 100%;
 }
 .Content figure {
   text-align: center;

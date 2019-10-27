@@ -1,13 +1,8 @@
 import moment from "moment";
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 
-const PostHeader = ({
-  data: { image, date, title, subtitle, url },
-  mainPage
-}) => {
-  const imageUrl = `/img/${image}`;
+const PostHeader = ({ data: { image, date, title, url }, mainPage }) => {
   const momentDate = moment(date);
   return (
     <header>
@@ -19,21 +14,6 @@ const PostHeader = ({
           <Link className="Link Link--no-underline" to={url}>
             {title}
           </Link>
-
-          <Helmet>
-            <title>{title} &bull; Albéric Trancart</title>
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={subtitle} />
-            <meta
-              property="og:url"
-              content={`https://alberic.trancart.net${url}`}
-            />
-            <link rel="canonical" href={`https://alberic.trancart.net${url}`} />
-            <meta
-              property="og:image"
-              content={`https://alberic.trancart.net${imageUrl}`}
-            />
-          </Helmet>
         </h1>
       ) : (
         <h3>
@@ -43,7 +23,7 @@ const PostHeader = ({
         </h3>
       )}
       <Link to={url}>
-        <img className="full-width mtop" src={imageUrl} alt={title} />
+        <img className="full-width mtop" src={image} alt={title} />
       </Link>
     </header>
   );

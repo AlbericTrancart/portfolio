@@ -41,20 +41,20 @@ exports.posts = [
     url: "/2017/11/prevent-the-css-being-a-chore",
     image: "posts/humantalkscss/oglogo.jpg",
     date: "2017-11-23"
-  },
-  {
-    id: 5,
-    title:
-      "SpaceX's Starship, the rocket that will make history - explained in 5 minutes",
-    subtitle: `We are on the brink of a revolution in space travel tech. It is my
-      pleasure to share the excitement by explaining what it is, why it is
-      important, how and when it will happen. This one will be in the history
-      books, so you better learn about it!`,
-    url:
-      "/2019/08/spacex-starship-the-rocket-that-will-make-history-explained-in-5-minutes",
-    image: "posts/spacexstarship/oglogo.jpg",
-    date: "2019-08-28"
   }
+  // {
+  //   id: 5,
+  //   title:
+  //     "SpaceX's Starship, the rocket that will make history - explained in 5 minutes",
+  //   subtitle: `We are on the brink of a revolution in space travel tech. It is my
+  //     pleasure to share the excitement by explaining what it is, why it is
+  //     important, how and when it will happen. This one will be in the history
+  //     books, so you better learn about it!`,
+  //   url:
+  //     "/2019/08/spacex-starship-the-rocket-that-will-make-history-explained-in-5-minutes",
+  //   image: "posts/spacexstarship/oglogo.jpg",
+  //   date: "2019-08-28"
+  // }
 ];
 
 exports.projects = [
