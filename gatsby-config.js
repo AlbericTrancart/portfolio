@@ -12,18 +12,58 @@ module.exports = {
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`
-    //   }
-    // },
 
     // Assets
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
+
+    // Articles
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "noopener noreferrer"
+            }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+              showCaptions: true,
+              withWebp: true
+            }
+          },
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              width: 800,
+              related: false,
+              noIframeBorder: true
+            }
+          },
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true
+            }
+          }
+        ]
+      }
+    },
 
     // SEO
     `gatsby-plugin-robots-txt`,

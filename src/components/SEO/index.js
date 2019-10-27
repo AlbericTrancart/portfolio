@@ -35,12 +35,7 @@ const SEO = () => {
       <meta name="author" content={author} />
 
       <link
-        href="https://fonts.googleapis.com/css?family=Noto+Sans"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Noto+Serif"
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
         rel="stylesheet"
         type="text/css"
       />

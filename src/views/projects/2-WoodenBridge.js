@@ -9,7 +9,7 @@ export default () => (
 
     <section className="Content">
       <p>
-        I was always interested in construction and architecture, that’s why I
+        I was always interested in construction and architecture, that's why I
         chose the civil engineering cursus during my studies (and the École
         Nationale des Ponts et Chaussées is one of the best shcools in this
         domain). One of my favorite courses was the design week, during which we

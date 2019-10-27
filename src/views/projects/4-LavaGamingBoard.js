@@ -28,7 +28,7 @@ export default () => (
       <p>
         I love building things and this was no exception. It was very fun and
         rewarding: now I can play on it with friends and full painted armies and
-        it’s awesome. If you want to know how I did it,{" "}
+        it's awesome. If you want to know how I did it,{" "}
         <Link
           className="Link"
           to={content.posts[2].url}

@@ -1,11 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "gatsby";
+import Link from "components/Link";
 
 const ProjectHeader = ({ data: { title, description, image, url } }) => (
   <header className="text-center">
     <h1>
-      <Link className="Link Link--no-underline" to={url}>
+      <Link noUnderline to={url}>
         {title}
       </Link>
 

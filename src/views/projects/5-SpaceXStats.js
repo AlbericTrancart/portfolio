@@ -9,7 +9,7 @@ export default () => (
 
     <section className="Content">
       <p>
-        SpaceX Stats is a fan-run website with stats about SpaceX’s
+        SpaceX Stats is a fan-run website with stats about SpaceX's
         achievements. The original concept is not mine, it was created by a
         Reddit user. I always wanted to promote the idea of space exploration
         but back then I lost faith in what we were able to do after the Columbia
@@ -18,7 +18,7 @@ export default () => (
         <a
           className="Link"
           href="https://www.youtube.com/watch?v=sYmQQn_ZSys"
-          title="SpaceX’s video of the CRS-8 droneship landing"
+          title="SpaceX's video of the CRS-8 droneship landing"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -43,7 +43,7 @@ export default () => (
           target="_blank"
           rel="noreferrer noopener"
         >
-          r/spacex’s API
+          r/spacex's API
         </a>{" "}
         to collect data about the launches. I also added some charts and
         improved the existing ones and the user experience on mobile over the

@@ -30,7 +30,7 @@ export default () => (
         alumni of our school and I joined the project soon after. GéoPonts
         became GéoSchool. Today, we are deploying these platforms in french
         engineering schools, helping the students building their professional
-        project and puting them in relation with cool companies they didn’t know
+        project and puting them in relation with cool companies they didn't know
         existed.
       </p>
 
@@ -41,7 +41,7 @@ export default () => (
         experience I ever had: I learnt a lot of things about data-driven
         product design, entrepreneurship, scaling and doing the architecture of
         a web platform, business strategy and even the basics of recruitment. On
-        top of that, we are working in Station F, the world’s biggest startup
+        top of that, we are working in Station F, the world's biggest startup
         campus created by Xavier Niel. This amazing place is the perfect one to
         meet fellow entrepreneurs and learn a lot about all the needed skills.
       </p>
