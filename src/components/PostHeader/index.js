@@ -25,6 +25,7 @@ const Banner = styled.img`
 
 const PostHeader = ({
   post: {
+    fields: { slug },
     frontmatter: {
       date,
       thumbnail: {
@@ -33,8 +34,7 @@ const PostHeader = ({
         }
       },
       title,
-      tags,
-      url
+      tags
     }
   },
   mainPage
@@ -52,18 +52,18 @@ const PostHeader = ({
     </Infos>
     {mainPage ? (
       <h1>
-        <Link noUnderline to={url}>
+        <Link noUnderline to={slug}>
           {title}
         </Link>
       </h1>
     ) : (
       <h3>
-        <Link noUnderline to={url}>
+        <Link noUnderline to={slug}>
           {title}
         </Link>
       </h3>
     )}
-    <Link to={url}>
+    <Link to={slug}>
       <Banner src={image} alt={title} />
     </Link>
   </header>

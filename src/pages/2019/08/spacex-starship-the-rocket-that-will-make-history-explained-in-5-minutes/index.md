@@ -2,7 +2,6 @@
 title: "SpaceX's Starship, the rocket that will make history - explained in 5 minutes"
 description: "We are on the brink of a revolution in space travel tech. It is my pleasure to share the excitement by explaining what it is, why it is important, how and when it will happen. This one will be in the history books, so you better learn about it!"
 slug: spacex-starship-the-rocket-that-will-make-history-explained-in-5-minutes
-url: /2019/08/spacex-starship-the-rocket-that-will-make-history-explained-in-5-minutes
 thumbnail: ./thumbnail.jpg
 date: 2019-08-28
 tags: ["Space exploration"]
@@ -12,7 +11,7 @@ We are on the brink of a revolution in space travel tech. It is my pleasure to s
 
 ## What it is
 
-Starship is SpaceX's next gen rocket, currently under development. You may have heard of it under its codename BFR, which stands for _Big, Fucking, Rocket_. Being 118 meters tall, **it will be the biggest and most powerful rocket in history**. Bigger and more powerful than the Satur the rocket that brought the Apollo missions to the Moon.
+Starship is SpaceX's next gen rocket, currently under development. You may have heard of it under its codename BFR, which stands for _Big, Fucking, Rocket_. Being 118 meters tall, **it will be the biggest and most powerful rocket in history**. Bigger and more powerful than the Saturn V, the rocket that brought the Apollo missions to the Moon.
 
 ![Sizes comparison](./sizes.png "Saturn V, Super Heavy/Starship and Falcon 9 (SpaceX's current rocket) size comparison")
 

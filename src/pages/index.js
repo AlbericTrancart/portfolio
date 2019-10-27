@@ -101,7 +101,6 @@ export const postFields = graphql`
         }
       }
       title
-      url
     }
     html
     timeToRead

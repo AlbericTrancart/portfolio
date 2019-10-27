@@ -8,7 +8,7 @@ import View from "components/View";
 const PostTemplate = ({ data, pageContext }) => {
   const { slug, previous, next } = pageContext;
   const { frontmatter, description, html } = data.markdownRemark;
-  const { title, thumbnail, url } = frontmatter;
+  const { title, thumbnail } = frontmatter;
 
   const image = thumbnail.childImageSharp.resize.src;
 
@@ -21,7 +21,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <meta property="og:description" content={description} />
         <meta
           property="og:url"
-          content={`https://alberic.trancart.net${url}`}
+          content={`https://alberic.trancart.net${slug}`}
         />
         <meta
           property="og:image"

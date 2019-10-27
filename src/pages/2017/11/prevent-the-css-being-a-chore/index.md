@@ -2,7 +2,6 @@
 title: "Prevent The CSS From Being A Chore"
 description: "Last month I presented a talk @ HumanTalks Paris about CSS and what you can do to prevent it from being a chore. Having unreadable CSS files of thousands of lines is neither fun nor good for business."
 slug: prevent-the-css-being-a-chore
-url: /2017/11/prevent-the-css-being-a-chore
 thumbnail: ./thumbnail.jpg
 date: 2017-11-23
 tags: ["Web development", "CSS"]

@@ -2,7 +2,6 @@
 title: "Learn and share: The One Post To Rule Them All"
 description: "It's time for a first post! As an introduction, I would like to explain WHY I am doing this. This whole blog idea. This is a kind of meta-post that will serve as a guideline for the other ones, so let's do this!"
 slug: learn-and-share-the-one-post-to-rule-them-all
-url: /2016/10/learn-and-share-the-one-post-to-rule-them-all
 thumbnail: ./thumbnail.jpg
 date: 2016-10-01
 tags: ["Life hacks"]

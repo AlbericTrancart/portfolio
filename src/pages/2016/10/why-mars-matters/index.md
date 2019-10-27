@@ -2,7 +2,6 @@
 title: "Why Mars matters"
 description: "One week ago, Elon Musk unveiled SpaceX's plans to colonize Mars, starting in 2025. Yep, you read that right. A lot of friends keep asking me tons of questions about this whole project, but the most recurrent one – and the hardest to answer – is: why?"
 slug: why-mars-matters
-url: /2016/10/why-mars-matters
 thumbnail: ./thumbnail.jpg
 date: 2016-10-04
 tags: ["Space exploration"]

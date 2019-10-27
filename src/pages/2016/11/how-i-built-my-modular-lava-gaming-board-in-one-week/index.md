@@ -2,7 +2,6 @@
 title: "How I Built My Lava Gaming Board In One Week"
 description: "This summer as I had some free time I decided to build what my collection of minis missed: a decent-looking gaming board. Having already played with full-painted armies on great gaming boards, I knew that's what I lacked to change cool battles into awesome battles."
 slug: how-i-built-my-modular-lava-gaming-board-in-one-week
-url: /2016/11/how-i-built-my-modular-lava-gaming-board-in-one-week
 thumbnail: ./thumbnail.jpg
 date: 2016-11-08
 tags: ["Warhammer 40k"]

@@ -19,7 +19,7 @@ const PostPreview = ({ showDivider, post }) => (
 
     <Description>
       {post.frontmatter.description}{" "}
-      <Link to={post.frontmatter.url}>Read&nbsp;→</Link>
+      <Link to={post.fields.slug}>Read&nbsp;→</Link>
     </Description>
 
     {showDivider && <Divider />}
