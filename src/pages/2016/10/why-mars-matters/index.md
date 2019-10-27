@@ -13,7 +13,7 @@ One week ago, [Elon Musk unveiled SpaceX's plans to colonize Mars](https://www.y
 
 When it comes to space exploration, there is an unbeatable-argument that space enthusiasts quote: do it to back up mankind on another hard drive, in order to prevent any Earth-level extinction event from wiping out humans… forever. This argument is very convenient because you can't deny its logic. As Elon Musk puts it:
 
-> **One path is we stay on earth forever and there will be some eventual extinction event. [...] The other is to become a spacefaring and mutiplanetary species, which I think some would say is the right way to go – that's what we want.**
+> One path is we stay on earth forever and there will be some eventual extinction event. [...] The other is to become a spacefaring and mutiplanetary species, which I think some would say is the right way to go – that's what we want.
 
 While it's easy to throw in this reason, most people will (rightfully) answer with "But why should I care? The probability of such an event make it far away in time for me". **So, let me make it very real for you and a lot more closer than you would have expected.**
 
@@ -30,7 +30,7 @@ That's obvious. The procrastinator logic goes like this:
 
 Sadly, we are 7 billions on Earth thinking exactly like this – because let's face it, [every one of us is a master procrastinator](http://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator). There's also "Why do it at all? I have more pressing matters". As Tim Urban said:
 
-> **It sounds to me like a person saying, "I'll worry about my health later when I don't have so many bills to pay." There will always, \_always \_be important problems to address on Earth, but if we allow what's urgent here to prevent us from addressing what's important in the big picture, we're allowing ourselves to take a huge existential risk.**
+> It sounds to me like a person saying, "I'll worry about my health later when I don't have so many bills to pay." There will always, \_always \_be important problems to address on Earth, but if we allow what's urgent here to prevent us from addressing what's important in the big picture, we're allowing ourselves to take a huge existential risk.
 
 ### There are always new ways to wipe out humans
 
@@ -70,7 +70,7 @@ A self-sustaining colony would have its own economy therefore the economic advan
 
 [In this excellent speech by Michael Griffin,](http://www.spaceref.com/news/viewsr.html?pid=23189) the former Administrator of NASA makes a distinction between what he calls the "Acceptable Reasons" and the "Real Reasons". He makes an analogy in which the space industry is like the cathedral builders of the Middle Ages. Cathedrals were done for the "Real Reasons", but in the end they also served the Acceptable ones.
 
-> **If things are done for the Real Reasons that motivate humans, they also serve the Acceptable Reasons. In that sense, in the practical sense, space really is about spin-offs, as many have argued. But it's not about spin-offs like Teflon and Tang and Velcro as the public is so often told – and which in fact did not come from the space program. And it's not about spin-offs in the form of better heart monitors or cheaper prices for liquid oxygen for hospitals. Yes, you get those things and many more, and they are real benefits. But that's not the right level on which to view the matter. The real spin-offs are at a higher level. We need to look at a broader landscape.**
+> If things are done for the Real Reasons that motivate humans, they also serve the Acceptable Reasons. In that sense, in the practical sense, space really is about spin-offs, as many have argued. But it's not about spin-offs like Teflon and Tang and Velcro as the public is so often told – and which in fact did not come from the space program. And it's not about spin-offs in the form of better heart monitors or cheaper prices for liquid oxygen for hospitals. Yes, you get those things and many more, and they are real benefits. But that's not the right level on which to view the matter. The real spin-offs are at a higher level. We need to look at a broader landscape.
 
 The Real Reasons cannot be taken into account in a cost/benefit analysis. That's why I say economic arguments are not relevant. The basic economy course tells you that if you want to get leverage on the long-term growth, you must invest in education, science and technology, but the benefits will be hardly quantifiable. We've seen the Doomsday-argument and solved the economic one. Those were Acceptable Reasons. So let's talk about the Real Reasons.
 

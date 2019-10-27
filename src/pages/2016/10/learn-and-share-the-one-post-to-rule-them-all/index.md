@@ -11,7 +11,7 @@ It's time for a first post! As an introduction, I would like to explain WHY I am
 
 ## Never stop learning
 
-> **Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young.** ~ Henry Ford
+> Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young. ~ Henry Ford
 
 Almost two years ago, I started to realize that learning goes well beyond studies, and a great many things are not learnt at school. **Since then, I have an objective: to never stop learning. This decision had a huge positive impact:** I feel happier and I think that I have done more in two years than ever before. Before delving into the **How** and the **What**, I will emphasize the **Why**.
 

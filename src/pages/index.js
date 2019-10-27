@@ -13,12 +13,26 @@ const IndexPage = ({
   }
 }) => {
   // Clone arrays to not reverse original list
-  const tags = group.slice(0).sort((tagA, tagB) => {
+  const tags = group.slice(0);
+
+  tags.push({ tag: "Theatre", totalCount: 0 });
+  tags.push({ tag: "Roleplaying", totalCount: 0 });
+  tags.push({ tag: "Heavy metal", totalCount: 0 });
+  tags.push({ tag: "Web accessibility", totalCount: 0 });
+
+  tags.sort((tagA, tagB) => {
     if (tagA.totalCount < tagB.totalCount) {
       return 1;
     }
     if (tagA.totalCount > tagB.totalCount) {
       return -1;
+    }
+
+    if (tagA.tag < tagB.tag) {
+      return -1;
+    }
+    if (tagA.tag > tagB.tag) {
+      return 1;
     }
     return 0;
   });
@@ -34,7 +48,7 @@ const IndexPage = ({
           variety of topics, including:
         </p>
 
-        <nav className="mtop">
+        <nav className="mtop" style={{ lineHeight: "1.1em" }}>
           {tags.map(({ tag }) => (
             <Fragment key={tag}>
               <Tag to={`/tag/${slugify(tag, { lower: true })}`}>#{tag}</Tag>{" "}

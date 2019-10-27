@@ -19,6 +19,8 @@ const TagPage = ({
         showDivider={index + 1 !== posts.length}
       />
     ))}
+
+    {posts.length === 0 && <span>No post with this tag yet!</span>}
   </View>
 );
 
