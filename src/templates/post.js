@@ -5,9 +5,13 @@ import Content from "components/Content";
 import PostHeader from "components/PostHeader";
 import View from "components/View";
 
-const PostTemplate = ({ data, pageContext }) => {
-  const { slug, previous, next } = pageContext;
-  const { frontmatter, description, html } = data.markdownRemark;
+const PostTemplate = ({ data }) => {
+  const {
+    frontmatter,
+    description,
+    html,
+    fields: { slug }
+  } = data.markdownRemark;
   const { title, thumbnail } = frontmatter;
 
   const image = thumbnail.childImageSharp.resize.src;

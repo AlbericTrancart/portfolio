@@ -45,21 +45,14 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     `).then(result => {
-      const { edges } = result.data.allMarkdownRemark;
-      const numberOfArticles = edges.length;
       const createdTagPages = [];
 
-      result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
-        const previous = index > 0 ? edges[index - 1].node : null;
-        const next =
-          index < numberOfArticles - 1 ? edges[index + 1].node : null;
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/post.js`),
           context: {
-            slug: node.fields.slug,
-            previous,
-            next
+            slug: node.fields.slug
           }
         });
 
