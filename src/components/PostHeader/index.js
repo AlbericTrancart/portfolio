@@ -8,15 +8,17 @@ import { colorPalette, Grid, typography } from "stylesheet";
 
 const Infos = styled.span`
   ${typography.small}
+  word-break: break-word;
 
-  ${Tag} {
-    margin-left: ${Grid(1)};
+  > ${Tag}:not(:last-child) {
+    margin-right: ${Grid(1)};
   }
 `;
 
 const PostDate = styled.time`
   color: ${colorPalette.lightGrey};
   white-space: nowrap;
+  margin-right: ${Grid(1)};
 `;
 
 const Banner = styled.img`
