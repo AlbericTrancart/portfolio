@@ -1,7 +1,6 @@
 const path = require("path");
 const slugify = require("slugify");
 const { createFilePath } = require("gatsby-source-filesystem");
-const content = require("./src/content");
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -17,16 +16,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
-
-  content.projects.forEach(project => {
-    createPage({
-      path: project.url,
-      component: path.resolve(`./src/templates/project.js`),
-      context: {
-        project
-      }
-    });
-  });
 
   return new Promise(resolve => {
     graphql(`
