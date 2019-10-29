@@ -7,7 +7,9 @@ date: 2015-07-15
 tags: ["Web development"]
 ---
 
-Back in 2014 during my first year at the École Nationale des Ponts et Chaussées, there was no intranet for the students. With a friend we decided to tackle this issue and we started building a website. It features a list of events organized by the student clubs (with automatic mailing if you follow a club), a directory to quickly find infos about other students, useful ressources, 12 themes, achievements and even a minigame.
+Back in 2014 during my first year at the École Nationale des Ponts et Chaussées, there was no intranet for the students. With a friend we decided to tackle this issue and we started building a website.
+
+It features a list of events organized by the student clubs (with automatic mailing if you follow a club), a directory to quickly find infos about other students, useful ressources, 12 themes, achievements and even a minigame.
 
 ![The main page with club events](./demo1.jpg "The main page with club events")
 ![The student directory](./demo2.jpg "The student directory")

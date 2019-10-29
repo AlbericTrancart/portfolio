@@ -13,14 +13,13 @@ tags: ["Web development", "Warhammer 40k"]
 
 Back in 2010, this was my first coding project ever: to create a total conversion mode based on the **Warhammer 40,000 - Dawn of War II** game in order to reproduce the gameplay and feeling of the **Space Hulk** board game.
 
-![An ingame screenshot](./ingame.jpg)
+![An ingame screenshot](./ingame.jpg "An ingame screenshot")
 
 It was a big success because it made it to top #2 on ModDb (and still is #6,000 of #31,000 7 years later), was translated in 4 languages (french, english, italian and german) and it was featured in articles in several gaming magazines. The latest version was downloaded 20,000 times.
 
-![An ingame screenshot of one of the maps](./map1.jpg)
 ![An ingame screenshot of one of the maps](./map2.jpg)
-![An ingame screenshot of one of the maps](./map3.jpg)
-![An ingame screenshot of one of the maps](./map4.jpg)
+
+![Another screenshot of one of the maps](./map3.jpg)
 
 It featured and demanded:
 

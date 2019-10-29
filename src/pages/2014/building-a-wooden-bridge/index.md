@@ -17,8 +17,9 @@ One of my favorite courses was the design week, during which we were tasked to d
 - A limited quantity of materials
 - A standard person could walk on the bridge… more than once
 
-![A photo of the wooden bridge](./image1.jpg)
-![A photo of the wooden bridge](./image2.jpg)
+![The bridge viewed from the side](./image1.jpg)
+
+![The bridge viewed from one of its ends](./image2.jpg)
 
 We chose to do an isostatic structure with a rotule in the middle - which later turned out to be the failure mode: the rotule broke after 7 crossings because we put a screw through a piece of wood of poor quality. At the end, this project was very fun and demanding. It allowed us to grasp the basics of structural engineering, modeling and bridge design.
 

@@ -9,11 +9,11 @@ tags: ["Entrepreneurship", "Web development"]
 
 In 2015, a friend of mine had a problem: he was looking for an internship in Sweden and seeking feedback from people who went there. Although these people existed and surely met him on a daily basis, he was unable to find them.
 
-After gathering useful information (like: who went where, the cost of living, the temperature, the price of a beer... **useful information**) amongst students with a Google Sheet which had a huge success, he decided to create a web platform to centralize and search through this data. GéoPonts (named after the name of our school) was born.
+He decided to gather useful information (like: who went where, the cost of living, the temperature, the price of a beer... **useful information**) with a Google Sheet and it had a huge success. He decided to create a web platform to centralize and search through this data. GéoPonts (named after the name of our school) was born.
 
 ![GéoSchool's logo](./logo.png)
 
-Later, as the platform was gaining a lot of traction he decided to go fulltime if he could find a way to answer this need elsewhere. Another alumni of our school and I joined the project soon after. GéoPonts became GéoSchool. Today, we are deploying these platforms in french engineering schools, helping the students building their professional project and puting them in relation with cool companies they didn't know existed.
+Later, the platform was gaining a lot of traction so he decided to go fulltime on it. Another alumni of our school and I joined the project soon after. GéoPonts became GéoSchool. Today, we are deploying these platforms in french engineering schools, helping the students building their professional project and puting them in relation with cool companies they didn't even know.
 
 ![The contact form](./contact.jpg)
 
@@ -23,4 +23,4 @@ On top of that, we are working in Station F, the world's biggest startup campus 
 
 ![GéoSchool's team](./team.jpg)
 
-## [Visit the demo website](https://demo.geoschool.fr)
+**Update:** as of today, we decided to end the project. You can read [our final conclusions in this blog post](https://www.geoschool.fr/) (link in French).
