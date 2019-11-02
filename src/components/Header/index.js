@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "components/Image";
 import Link from "components/Link";
 import { breakpoints, colorPalette, Grid, wrapped } from "stylesheet";
 import { GitHub, Linkedin, Twitter } from "react-feather";
@@ -32,7 +33,7 @@ const PictureContainer = styled.div`
   }
 `;
 
-const ProfilePicture = styled.img`
+const ProfilePicture = styled(Image)`
   border-radius: 50%;
   width: 100%;
   max-width: 200px;
@@ -73,7 +74,10 @@ const Header = () => (
     <Wrapper>
       <PictureContainer>
         <Link to="/" title="Back to the home page">
-          <ProfilePicture src="/img/profile.jpg" alt="My profile pic!" />
+          <ProfilePicture
+            filename="alberictrancart.jpg"
+            alt="My profile pic!"
+          />
         </Link>
       </PictureContainer>
 
@@ -88,7 +92,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer noopener"
             href="https://twitter.com/alberictrancart"
-            title="Twitter"
+            title="My profile on Twitter"
           >
             <Twitter />
           </Link>
@@ -98,7 +102,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer noopener"
             href="https://github.com/AlbericTrancart"
-            title="GitHub"
+            title="My profile on GitHub"
           >
             <GitHub />
           </Link>
@@ -108,7 +112,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.linkedin.com/in/alberic-trancart"
-            title="LinkedIn"
+            title="My profile on LinkedIn"
           >
             <Linkedin />
           </Link>
