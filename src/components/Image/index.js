@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 import Image from "gatsby-image";
 
 const Img = ({ background, filename, children, tag, ...rest }) => (
@@ -27,6 +28,18 @@ const Img = ({ background, filename, children, tag, ...rest }) => (
       });
       if (!image) {
         return null;
+      }
+
+      if (background) {
+        return (
+          <BackgroundImage
+            Tag={tag}
+            fluid={image.node.childImageSharp.fluid}
+            {...rest}
+          >
+            {children}
+          </BackgroundImage>
+        );
       }
 
       return <Image fluid={image.node.childImageSharp.fluid} {...rest} />;

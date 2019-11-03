@@ -12,7 +12,7 @@ export const dividerStyle = css`
   ::after {
     content: "";
     flex-grow: 1;
-    background: ${colorPalette.lighterGrey};
+    background: ${colorPalette.divider};
     height: 1px;
     font-size: 0;
     line-height: 0;

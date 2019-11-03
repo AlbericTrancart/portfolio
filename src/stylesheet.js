@@ -2,11 +2,28 @@ import { css } from "styled-components";
 
 export const Grid = size => `${size / 2}rem`;
 
-export const colorPalette = {
+const colors = {
   darkGrey: "#3a4145",
   lightGrey: "#78858d",
   lighterGrey: "#eaecee",
-  blue: "#57a3e8"
+  blue: "#57a3e8",
+  white: "#ffffff"
+};
+
+export const colorPalette = {
+  text: colors.darkGrey,
+  lightText: colors.lightGrey,
+  divider: colors.lighterGrey,
+
+  primary: colors.darkGrey,
+  primaryText: colors.white,
+
+  secondary: colors.blue,
+  secondaryText: colors.white,
+
+  // Timeline
+  timelineBackground: colors.lighterGrey,
+  contentBackground: "#f5f5f5"
 };
 
 export const breakpoints = {
@@ -49,4 +66,10 @@ export const typography = {
   small: css`
     font-size: 0.75rem;
   `
+};
+
+export const radius = "3px";
+
+export const thresholds = {
+  large: "1200px"
 };

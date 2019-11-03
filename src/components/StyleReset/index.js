@@ -21,6 +21,18 @@ const StyleReset = createGlobalStyle`
   ul {
     margin: 0;
   }
+
+  button {
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -28,7 +40,7 @@ const StyleReset = createGlobalStyle`
   /* Default styles */
   html {
     ${typography.main}
-    color: ${colorPalette.darkGrey};
+    color: ${colorPalette.text};
     height: 100%;
   }
   body {

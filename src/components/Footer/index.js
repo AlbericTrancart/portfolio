@@ -9,7 +9,7 @@ const Container = styled.footer`
   margin: ${Grid(2)} auto;
 
   ${typography.small}
-  color: ${colorPalette.lightGrey};
+  color: ${colorPalette.lightText};
   text-decoration: italic;
   text-align: center;
 
@@ -17,7 +17,7 @@ const Container = styled.footer`
     color: inherit;
 
     &:hover, &:focus {
-      color: ${colorPalette.blue};
+      color: ${colorPalette.secondary};
     }
   }
 `;

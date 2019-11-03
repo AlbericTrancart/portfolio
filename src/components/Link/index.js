@@ -3,13 +3,14 @@ import { Link as GatsbyLink } from "gatsby";
 import { colorPalette } from "stylesheet";
 
 export const linkStyle = css`
-  color: ${colorPalette.darkGrey};
+  color: ${colorPalette.primary};
   cursor: pointer;
   transition: color ease 0.3s;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: ${colorPalette.blue};
+    color: ${colorPalette.secondary};
   }
 `;
 

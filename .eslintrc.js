@@ -25,7 +25,7 @@ module.exports = {
     "no-var": "error", // optional, recommended when using es6+
     "no-unused-vars": 1, // recommended
     "arrow-spacing": ["error", { before: true, after: true }], // recommended
-    indent: ["error", 2],
+    indent: 0,
     "comma-dangle": [
       "error",
       {
@@ -42,7 +42,6 @@ module.exports = {
     "react/jsx-uses-vars": "error",
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
     "react/prop-types": 0,
-    indent: ["error", 2, { SwitchCase: 1 }],
     "no-plusplus": [
       "error",
       {

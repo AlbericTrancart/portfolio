@@ -16,7 +16,7 @@ const Infos = styled.span`
 `;
 
 const PostDate = styled.time`
-  color: ${colorPalette.lightGrey};
+  color: ${colorPalette.lightText};
   white-space: nowrap;
   margin-right: ${Grid(1)};
 `;

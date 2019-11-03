@@ -33,7 +33,8 @@ const Content = styled.div`
   blockquote,
   hr,
   .gatsby-resp-image-figure,
-  .embedVideo-container {
+  .embedVideo-container,
+  .gatsby-image-wrapper {
     margin-top: ${Grid(2)};
 
     @media (min-width: ${breakpoints.sm}) {
@@ -67,7 +68,7 @@ const Content = styled.div`
 
   blockquote {
     font-style: italic;
-    border-left: ${colorPalette.darkGrey} 0.3em solid;
+    border-left: ${colorPalette.primary} 0.3em solid;
     padding-left: ${Grid(3)};
     margin-left: -${Grid(3)};
   }

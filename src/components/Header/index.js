@@ -6,8 +6,8 @@ import { breakpoints, colorPalette, Grid, wrapped } from "stylesheet";
 import { GitHub, Linkedin, Twitter } from "react-feather";
 
 const Container = styled.header`
-  background-color: ${colorPalette.darkGrey};
-  color: white;
+  background-color: ${colorPalette.primary};
+  color: ${colorPalette.primaryText};
   text-align: center;
 
   @media (min-width: ${breakpoints.sm}) {
@@ -34,6 +34,7 @@ const PictureContainer = styled.div`
 `;
 
 const ProfilePicture = styled(Image)`
+  display: inline-block;
   border-radius: 50%;
   width: 100%;
   max-width: 200px;
@@ -56,7 +57,7 @@ const SocialLinks = styled.div`
     color: inherit;
 
     &:hover {
-      color: ${colorPalette.blue};
+      color: ${colorPalette.secondary};
     }
   }
 

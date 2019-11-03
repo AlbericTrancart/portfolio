@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import { navigate } from 'gatsby';
+import { useEffect } from "react";
+import { navigate } from "gatsby";
 
 const NotFoundPage = () => {
   useEffect(() => {
-    navigate('/');
+    navigate("/");
   }, []);
 
   return null;

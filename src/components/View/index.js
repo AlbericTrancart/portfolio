@@ -12,12 +12,12 @@ const Content = styled.main`
   margin-top: ${Grid(4)};
 `;
 
-const View = ({ children, isHomepage }) => (
+const View = ({ blankPage, children, isHomepage }) => (
   <Fragment>
     <StyleReset />
     <SEO />
     <Header />
-    <Content>{children}</Content>
+    {blankPage ? children : <Content>{children}</Content>}
     <Footer isHomepage={isHomepage} />
   </Fragment>
 );

@@ -104,7 +104,7 @@ But thus far, SpaceX is on time according to the original timeline revealed in 2
 
 ## If you want to...
 
-- See the update timeline, you can checkout [starshiptimeline.space](https://starshiptimeline.space)
+- See the update timeline, you can checkout my [Starship Timeline](/starship-timeline)
 - Ask any question, you can tweet them [@alberictrancart](https://twitter.com/alberictrancart)
 - Know more about Starship, Raptor engine or anything related to rocket science, [here is a great Starship compendium](https://www.elonx.net/super-heavy-starship-compendium/)
 - Stay up to date with Starship infos, the [r/spacex](https://www.reddit.com/r/spacex/) Reddit community is the best resource but you can also follow me on Twitter ;)
