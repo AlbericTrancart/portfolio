@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { graphql } from "gatsby";
-import Link from "components/Link";
 import slugify from "slugify";
-
+import Divider from "components/Divider";
+import Link from "components/Link";
 import PostPreview from "components/PostPreview";
 import Tag from "components/Tag";
 import View from "components/View";
@@ -49,20 +49,24 @@ const IndexPage = ({
         </p>
 
         <nav className="mtop" style={{ lineHeight: "1.1em" }}>
-          {tags.map(({ tag }) => (
+          {tags.map(({ tag, totalCount }) => (
             <Fragment key={tag}>
-              <Tag to={`/tag/${slugify(tag, { lower: true })}`}>#{tag}</Tag>{" "}
+              <Tag
+                to={`/tag/${slugify(tag, { lower: true })}`}
+                title={`${totalCount} post${
+                  totalCount === 1 ? "" : "s"
+                } about ${tag}`}
+              >
+                #{tag}
+              </Tag>{" "}
             </Fragment>
           ))}
         </nav>
 
-        <p className="mtop">...and more, depending on the mood!</p>
-
         <p className="mtop">
-          But most of all, I love learning! As a consequence, I will post about
-          what I believe is worth sharing.{" "}
+          ...and more, depending on the mood!{" "}
           <strong>
-            If you have any question or feedback, DM me on{" "}
+            If you have any question or feedback, you can DM me on{" "}
             <Link
               as="a"
               target="_blank"
@@ -77,8 +81,11 @@ const IndexPage = ({
         </p>
       </section>
 
+      <Divider />
+
       <section className="mtop">
-        <h2 id="posts">Posts</h2>
+        <h2 id="posts">Latest posts</h2>
+        <Link to="/sitemap">Or browse all posts</Link>
 
         {posts.map(({ node: post }, index) => (
           <PostPreview
@@ -123,7 +130,10 @@ export const postFields = graphql`
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+    ) {
       totalCount
       group(field: frontmatter___tags) {
         tag: fieldValue
