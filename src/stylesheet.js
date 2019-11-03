@@ -69,7 +69,3 @@ export const typography = {
 };
 
 export const radius = "3px";
-
-export const thresholds = {
-  large: "1200px"
-};

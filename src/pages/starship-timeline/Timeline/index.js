@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { colorPalette, radius, thresholds } from "stylesheet";
+import { colorPalette, radius, breakpoints } from "stylesheet";
 
 const DATE_ITEM_PADDING = 2;
 const TRIANGLE_WIDTH = 3;
@@ -16,14 +16,14 @@ const Grid = size => `${size * 5}px`;
 export const Timeline = styled.main`
   display: flex;
   flex-direction: column;
-  padding: ${Grid(8)} ${Grid(2)} ${Grid(OFFSET_CIRCLE_FROM_ITEM)};
+  padding: ${Grid(6)} ${Grid(2)} ${Grid(OFFSET_CIRCLE_FROM_ITEM)};
   background-color: ${colorPalette.timelineBackground};
   min-height: 100vh;
   overflow-x: hidden;
 
-  @media screen and (min-width: ${thresholds.large}) {
+  @media screen and (min-width: ${breakpoints.lg}) {
     align-items: center;
-    padding-top: ${Grid(16)};
+    padding-top: ${Grid(10)};
   }
 `;
 
@@ -164,7 +164,7 @@ export const Item = styled.article`
   position: relative;
   margin-bottom: ${Grid(MARGIN_BETWEEN_ITEMS)};
 
-  @media screen and (min-width: ${thresholds.large}) {
+  @media screen and (min-width: ${breakpoints.lg}) {
     &:nth-child(odd) {
       ${leftStyle};
     }
@@ -174,7 +174,7 @@ export const Item = styled.article`
     }
   }
 
-  @media screen and (max-width: calc(${thresholds.large} - 1px)) {
+  @media screen and (max-width: calc(${breakpoints.lg} - 1px)) {
     ${rightStyle};
     transform: translateX(${Grid(
       CIRCLE_SIZE / 2 + MARGIN_BETWEEN_ITEMS_AND_TIMELINE

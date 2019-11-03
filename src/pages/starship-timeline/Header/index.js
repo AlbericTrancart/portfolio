@@ -8,7 +8,7 @@ export const TimelineHeader = styled(Image)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 55vh;
   padding: ${Grid(2)} ${Grid(1)};
   background-color: ${darken(0.1, colorPalette.primary)};
   color: ${colorPalette.primaryText};
