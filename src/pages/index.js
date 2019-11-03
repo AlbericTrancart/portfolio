@@ -132,7 +132,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
+      limit: 7
     ) {
       totalCount
       group(field: frontmatter___tags) {
