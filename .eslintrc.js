@@ -16,10 +16,6 @@ module.exports = {
       }
     }
   },
-  parser: "babel-eslint",
-  parserOptions: {
-    ecmaVersion: 8 // optional, recommended 6+
-  },
   rules: {
     "react/no-unescaped-entities": 0,
     "no-var": "error", // optional, recommended when using es6+
@@ -50,6 +46,7 @@ module.exports = {
     ],
     "no-loop-func": 0,
     "react/no-array-index-key": 0,
-    "react/jsx-filename-extension": [1, { extensions: [".js"] }]
+    "react/jsx-filename-extension": [1, { extensions: [".js"] }],
+    "react/jsx-props-no-spreading": 0
   }
 };

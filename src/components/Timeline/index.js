@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Content from "components/Content";
 import Countdown from "./Countdown";
 import {
@@ -55,7 +55,7 @@ class StarshipTimeline extends React.Component {
   render() {
     const { state } = this;
     return (
-      <Fragment>
+      <>
         <TimelineHeader
           background
           Tag="section"
@@ -88,7 +88,7 @@ class StarshipTimeline extends React.Component {
             </Item>
           ))}
         </Timeline>
-      </Fragment>
+      </>
     );
   }
 }

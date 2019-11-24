@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Footer from "components/Footer";
@@ -13,13 +13,13 @@ const Content = styled.main`
 `;
 
 const View = ({ blankPage, children, isHomepage }) => (
-  <Fragment>
+  <>
     <StyleReset />
     <SEO />
     <Header />
     {blankPage ? children : <Content>{children}</Content>}
     <Footer isHomepage={isHomepage} />
-  </Fragment>
+  </>
 );
 
 export default View;
