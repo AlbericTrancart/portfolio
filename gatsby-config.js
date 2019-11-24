@@ -66,6 +66,12 @@ module.exports = {
 
     // SEO
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/alberictrancart.jpg"
+      }
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
