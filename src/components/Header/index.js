@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
 import Image from "components/Image";
 import Link from "components/Link";
 import { breakpoints, colorPalette, Grid, wrapped } from "stylesheet";
@@ -70,57 +71,71 @@ const Bio = styled.p`
   margin-top: ${Grid(2)};
 `;
 
-const Header = () => (
-  <Container>
-    <Wrapper>
-      <PictureContainer>
-        <Link to="/" title="Back to the home page">
-          <ProfilePicture
-            filename="alberictrancart.jpg"
-            alt="My profile pic!"
-          />
-        </Link>
-      </PictureContainer>
+const Header = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            description
+          }
+        }
+      }
+    `
+  );
 
-      <HeaderContent>
-        <h1>Albéric Trancart</h1>
+  return (
+    <Container>
+      <Wrapper>
+        <PictureContainer>
+          <Link to="/" title="Back to the home page">
+            <ProfilePicture
+              filename="alberictrancart.jpg"
+              alt="My profile pic!"
+            />
+          </Link>
+        </PictureContainer>
 
-        <Bio>Developer, life hacker, space enthusiast and more!</Bio>
+        <HeaderContent>
+          <h1>Albéric Trancart</h1>
 
-        <SocialLinks>
-          <Link
-            as="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://twitter.com/alberictrancart"
-            title="My profile on Twitter"
-          >
-            <Twitter />
-          </Link>
-          &nbsp;
-          <Link
-            as="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/AlbericTrancart"
-            title="My profile on GitHub"
-          >
-            <GitHub />
-          </Link>
-          &nbsp;
-          <Link
-            as="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://www.linkedin.com/in/alberic-trancart"
-            title="My profile on LinkedIn"
-          >
-            <Linkedin />
-          </Link>
-        </SocialLinks>
-      </HeaderContent>
-    </Wrapper>
-  </Container>
-);
+          <Bio>{site.siteMetadata.description}</Bio>
+
+          <SocialLinks>
+            <Link
+              as="a"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://twitter.com/alberictrancart"
+              title="My profile on Twitter"
+            >
+              <Twitter />
+            </Link>
+            &nbsp;
+            <Link
+              as="a"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/AlbericTrancart"
+              title="My profile on GitHub"
+            >
+              <GitHub />
+            </Link>
+            &nbsp;
+            <Link
+              as="a"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.linkedin.com/in/alberic-trancart"
+              title="My profile on LinkedIn"
+            >
+              <Linkedin />
+            </Link>
+          </SocialLinks>
+        </HeaderContent>
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default Header;

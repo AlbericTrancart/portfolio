@@ -24,6 +24,16 @@ const PageListItem = styled.li`
   align-items: center;
 `;
 
+const TagsList = styled.ul`
+  padding: 0;
+  list-style-type: 0;
+  text-indent: 0;
+
+  > li {
+    display: inline;
+  }
+`;
+
 const BackgroundImage = styled(GatsbyImage)`
   width: 20%;
   padding-bottom: 15%;
@@ -92,20 +102,13 @@ const IndexPage = ({
           variety of topics, including:
         </p>
 
-        <nav className="mtop" style={{ lineHeight: "1.1em" }}>
-          {tags.map(({ tag, totalCount }) => (
-            <Fragment key={tag}>
-              <Tag
-                to={`/tag/${slugify(tag, { lower: true })}`}
-                title={`${totalCount} post${
-                  totalCount === 1 ? "" : "s"
-                } about ${tag}`}
-              >
-                #{tag}
-              </Tag>{" "}
-            </Fragment>
+        <TagsList className="mtop" style={{ lineHeight: "1.1em" }}>
+          {tags.map(({ tag }) => (
+            <li key={tag}>
+              <Tag to={`/tag/${slugify(tag, { lower: true })}`}>#{tag}</Tag>{" "}
+            </li>
           ))}
-        </nav>
+        </TagsList>
 
         <p className="mtop">
           ...and more, depending on the mood!

@@ -3,7 +3,7 @@ const siteUrl = `https://alberic.trancart.net`;
 module.exports = {
   siteMetadata: {
     title: `Albéric Trancart`,
-    description: `Developer, life hacker, space enthusiast and more!`,
+    description: `Developer, space explorer, dungeon master and more!`,
     author: `Albéric Trancart`,
     siteUrl
   },
