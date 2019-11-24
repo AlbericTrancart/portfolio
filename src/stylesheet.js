@@ -32,7 +32,7 @@ export const breakpoints = {
   lg: "1400px"
 };
 
-export const maxAppSize = "800px";
+export const maxAppSize = "750px";
 
 export const wrapped = css`
   margin-left: auto;
@@ -40,14 +40,14 @@ export const wrapped = css`
   padding: 0 ${Grid(1)};
   max-width: 700px;
 
-  @media and (min-width: ${breakpoints.sm}) {
+  @media (min-width: ${breakpoints.sm}) {
     width: ${breakpoints.sm};
     padding: 0;
   }
-  @media and (min-width: ${breakpoints.md}) {
+  @media (min-width: ${breakpoints.md}) {
     width: ${breakpoints.md};
   }
-  @media and (min-width: ${breakpoints.lg}) {
+  @media (min-width: ${breakpoints.lg}) {
     width: ${breakpoints.lg};
     max-width: ${maxAppSize};
   }

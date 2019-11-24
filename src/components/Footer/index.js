@@ -26,8 +26,7 @@ const Footer = ({ isHomepage }) => (
   <Container>
     {!isHomepage && <Link to="/#posts">Back to the home page</Link>}
     <Divider />
-    Made with GatsbyJS, ❤ and other hipster technologies.{" "}
-    <Link to="/sitemap">Sitemap</Link>.
+    Made with GatsbyJS, ❤ and other hipster technologies.
     <br />
     Design philosophy inspired by{" "}
     <Link

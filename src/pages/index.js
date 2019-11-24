@@ -1,11 +1,55 @@
 import React, { Fragment } from "react";
+import styled from "styled-components";
+import { breakpoints, colorPalette, Grid, typography } from "stylesheet";
+import format from "date-fns/format";
 import { graphql } from "gatsby";
+import GatsbyImage from "gatsby-background-image";
 import slugify from "slugify";
 import Divider from "components/Divider";
+import Image from "components/Image";
 import Link from "components/Link";
-import PostPreview from "components/PostPreview";
 import Tag from "components/Tag";
 import View from "components/View";
+
+const PageList = styled.ul`
+  display: grid;
+  grid-row-gap: ${Grid(2)};
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding: 0;
+`;
+
+const PageListItem = styled.li`
+  display: flex;
+  align-items: center;
+`;
+
+const BackgroundImage = styled(GatsbyImage)`
+  width: 20%;
+  padding-bottom: 15%;
+
+  @media (min-width: ${breakpoints.md}) {
+    width: ${Grid(12)};
+    padding-bottom: ${Grid(8)};
+  }
+
+  flex-shrink: 0;
+  margin-right: ${Grid(1)};
+`;
+
+const PostDate = styled.time`
+  ${typography.small}
+  color: ${colorPalette.lightText};
+  white-space: nowrap;
+  margin-right: ${Grid(1)};
+`;
+
+const InfosContainer = styled.div`
+  display: none;
+  @media (min-width: ${breakpoints.sm}) {
+    display: block;
+  }
+`;
 
 const IndexPage = ({
   data: {
@@ -64,7 +108,8 @@ const IndexPage = ({
         </nav>
 
         <p className="mtop">
-          ...and more, depending on the mood!{" "}
+          ...and more, depending on the mood!
+          <br />
           <strong>
             If you have any question or feedback, you can DM me on{" "}
             <Link
@@ -84,16 +129,60 @@ const IndexPage = ({
       <Divider />
 
       <section className="mtop">
-        <h2 id="posts">Latest posts</h2>
-        <Link to="/sitemap">Or browse all posts</Link>
+        <h2>Special pages</h2>
+        <PageList className="mtop">
+          <PageListItem>
+            <BackgroundImage
+              as={Image}
+              background
+              filename="starship-timeline.png"
+            />
+            <Link to="/starship-timeline">Starship Timeline</Link>
+          </PageListItem>
+        </PageList>
+      </section>
 
-        {posts.map(({ node: post }, index) => (
-          <PostPreview
-            key={post.id}
-            post={post}
-            showDivider={index + 1 !== posts.length}
-          />
-        ))}
+      <Divider />
+
+      <section className="mtop">
+        <h2>Posts</h2>
+        <PageList className="mtop">
+          {posts.map(
+            ({
+              node: {
+                id,
+                fields: { slug },
+                frontmatter: {
+                  date,
+                  tags: postTags,
+                  thumbnail: {
+                    childImageSharp: { fluid: imageFluid }
+                  },
+                  title
+                }
+              }
+            }) => (
+              <PageListItem key={id}>
+                <BackgroundImage fluid={imageFluid} />
+                <div>
+                  <InfosContainer>
+                    <PostDate dateTime={date}>
+                      {format(new Date(date), "MMMM dd, yyyy")}
+                    </PostDate>
+                    {postTags.map(tag => (
+                      <Fragment key={tag}>
+                        <Tag to={`tag/${slugify(tag, { lower: true })}`}>
+                          #{tag}
+                        </Tag>{" "}
+                      </Fragment>
+                    ))}
+                  </InfosContainer>
+                  <Link to={slug}>{title}</Link>
+                </div>
+              </PageListItem>
+            )
+          )}
+        </PageList>
       </section>
     </View>
   );
