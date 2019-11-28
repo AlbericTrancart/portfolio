@@ -68,6 +68,17 @@ export default [
     future: true
   },
   {
+    title: `Starship Mk1 test failure`,
+    date: formatDate("2019-11-20"),
+    content: (
+      <p>
+        The first Starship prototype failed during a tank pressurization test.
+        The team then decided to focus their efforts on the Mk3 prototype.
+        <Image filename="starship-timeline/starship-mk1-explosion.jpg" />
+      </p>
+    )
+  },
+  {
     title: `Starship Mk1 presentation`,
     date: formatDate("2019-09-28"),
     content: (
