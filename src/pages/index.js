@@ -222,10 +222,7 @@ export const postFields = graphql`
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 7
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       group(field: frontmatter___tags) {
         tag: fieldValue
