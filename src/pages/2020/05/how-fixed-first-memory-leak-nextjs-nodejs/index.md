@@ -174,4 +174,4 @@ Here is the result with the same load profiles:
 
 I feared the word "memory leak" because it seemed almost like magic... however magic does not resist to great tooling and a rational and constructed approach.
 
-Where you see magic, the hammer of the scientific method must fall hard. [Like CSS.](https://blog.theodo.com/2018/06/write-better-css-part-1/)
+Where you see magic, the hammer of the scientific method must fall hard. [Like CSS magic.](https://blog.theodo.com/2018/06/write-better-css-part-1/)
