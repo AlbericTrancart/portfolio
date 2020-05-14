@@ -5,7 +5,7 @@ module.exports = {
     title: `Albéric Trancart`,
     description: `Developer, space explorer, dungeon master and more!`,
     author: `Albéric Trancart`,
-    siteUrl
+    siteUrl,
   },
   plugins: [
     // Codebase
@@ -24,8 +24,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -35,33 +35,28 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "noopener noreferrer"
-            }
+              rel: "noopener noreferrer",
+            },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              withWebp: true
-            }
+              withWebp: true,
+            },
           },
           {
             resolve: `gatsby-remark-embed-video`,
             options: {
               width: 800,
               related: false,
-              noIframeBorder: true
-            }
+              noIframeBorder: true,
+            },
           },
           `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              noInlineHighlight: true
-            }
-          }
-        ]
-      }
+          `gatsby-remark-prismjs`,
+        ],
+      },
     },
 
     // SEO
@@ -69,23 +64,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/images/alberictrancart.jpg"
-      }
+        logo: "./src/images/alberictrancart.jpg",
+      },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl
-      }
+        siteUrl,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-110877372-1`,
-        head: false
-      }
+        head: false,
+      },
     },
-    `gatsby-plugin-netlify`
-  ]
+    `gatsby-plugin-netlify`,
+  ],
 };

@@ -11,7 +11,7 @@ const TIMELINE_WIDTH = 1;
 const ITEM_WIDTH = 100;
 const OFFSET_CIRCLE_FROM_ITEM = DATE_ITEM_PADDING;
 
-const Grid = size => `${size * 5}px`;
+const Grid = (size) => `${size * 5}px`;
 
 export const Timeline = styled.main`
   display: flex;
@@ -75,7 +75,7 @@ const timeline = css`
   position: absolute;
   top: ${Grid(OFFSET_CIRCLE_FROM_ITEM)};
   height: calc(100% + ${Grid(MARGIN_BETWEEN_ITEMS)});
-  border-style: ${props => (props.future ? "dotted" : "solid")};
+  border-style: ${(props) => (props.future ? "dotted" : "solid")};
   border-width: 0 0 0 ${Grid(1)};
   border-color: ${colorPalette.secondary};
   opacity: 0.3;
@@ -96,7 +96,7 @@ const leftStyle = css`
   }
 
   ${ItemContent} {
-    ${props =>
+    ${(props) =>
       props.visible
         ? css`
             opacity: 1;
@@ -135,7 +135,7 @@ const rightStyle = css`
   }
 
   ${ItemContent} {
-    ${props =>
+    ${(props) =>
       props.visible
         ? css`
             opacity: 1;

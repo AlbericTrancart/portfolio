@@ -17,7 +17,7 @@ export const linkStyle = css`
 const Link = styled(GatsbyLink)`
   ${linkStyle}
 
-  ${props =>
+  ${(props) =>
     props.noUnderline &&
     css`
       text-decoration: none;

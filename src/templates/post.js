@@ -10,7 +10,7 @@ const PostTemplate = ({ data }) => {
     frontmatter,
     description,
     html,
-    fields: { slug }
+    fields: { slug },
   } = data.markdownRemark;
   const { title, thumbnail } = frontmatter;
 

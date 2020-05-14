@@ -33,21 +33,21 @@ const PostHeader = ({
       date,
       thumbnail: {
         childImageSharp: {
-          fluid: { src: image }
-        }
+          fluid: { src: image },
+        },
       },
       title,
-      tags
-    }
+      tags,
+    },
   },
-  mainPage
+  mainPage,
 }) => (
   <header>
     <Infos>
       <PostDate dateTime={date}>
         {format(new Date(date), "MMMM dd, yyyy")}
       </PostDate>
-      {tags.map(tag => (
+      {tags.map((tag) => (
         <Tag key={tag} to={`tag/${slugify(tag, { lower: true })}`}>
           #{tag}
         </Tag>

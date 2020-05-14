@@ -1,5 +1,5 @@
-import React from 'react';
-import { Wrapper, Value, Subtitle } from './style';
+import React from "react";
+import { Wrapper, Value, Subtitle } from "./style";
 
 const ONE_MINUTE_IN_S = 60;
 const ONE_HOUR_IN_S = ONE_MINUTE_IN_S * 60;
@@ -31,7 +31,7 @@ const Countdown = ({ value }) => {
       </Value>
       <Value>
         {seconds.toLocaleString()}
-        <Subtitle>Seconds</Subtitle>{' '}
+        <Subtitle>Seconds</Subtitle>{" "}
       </Value>
     </Wrapper>
   );

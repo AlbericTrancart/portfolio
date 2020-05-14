@@ -1,8 +1,8 @@
-import React from 'react';
-import Countdown from './component';
+import React from "react";
+import Countdown from "./component";
 
-const calculateDuration = props => ({
-  value: (props.value.getTime() - Math.floor(Date.now())) / 1000
+const calculateDuration = (props) => ({
+  value: (props.value.getTime() - Math.floor(Date.now())) / 1000,
 });
 
 class CountdownContainer extends React.Component {

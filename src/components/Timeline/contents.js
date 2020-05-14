@@ -5,14 +5,14 @@ import Link from "components/Link";
 import Video from "components/Video";
 
 const DATE_FORMAT = "dd MMM yyyy";
-const formatDate = dateString => format(new Date(dateString), DATE_FORMAT);
+const formatDate = (dateString) => format(new Date(dateString), DATE_FORMAT);
 
 export default [
   {
     title: `Humans on Mars`,
     date: `2024`,
     content: `SpaceX's goal is to land two cargo and two crewed Starships on Mars in 2024.`,
-    future: true
+    future: true,
   },
   {
     title: `#dearMoon`,
@@ -31,7 +31,7 @@ export default [
         .
       </p>
     ),
-    future: true
+    future: true,
   },
   {
     title: `Cargo landing on Mars`,
@@ -42,7 +42,7 @@ export default [
         landing technologies also work on Mars.
       </p>
     ),
-    future: true
+    future: true,
   },
   {
     title: `First Starship satellite launch`,
@@ -53,7 +53,7 @@ export default [
         commercial satellite launch in 2021.
       </p>
     ),
-    future: true
+    future: true,
   },
   {
     title: `First orbital launch`,
@@ -65,7 +65,7 @@ export default [
         safely landed and reused.
       </p>
     ),
-    future: true
+    future: true,
   },
   {
     title: `Starship Mk1 test failure`,
@@ -76,7 +76,7 @@ export default [
         The team then decided to focus their efforts on the Mk3 prototype.
         <Image filename="starship-timeline/starship-mk1-explosion.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `Starship Mk1 presentation`,
@@ -87,7 +87,7 @@ export default [
         doing a 20km-high flight with it.
         <Image filename="starship-timeline/starhopper-mk1-complete.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `Starhopper 150m hop`,
@@ -98,7 +98,7 @@ export default [
         validate the engine control and landing algorithms.
         <Video youtubeId="bYb3bfA6_sQ" />
       </p>
-    )
+    ),
   },
   {
     title: `Starhsip orbital prototypes construction starts`,
@@ -110,7 +110,7 @@ export default [
         land is the winner.
         <Image filename="starship-timeline/florby.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `First full-scale Raptor engine test`,
@@ -120,7 +120,7 @@ export default [
         The Raptor engine was tested at full power for the first time.
         <Video youtubeId="X2dEpe8WS1A" />
       </p>
-    )
+    ),
   },
   {
     title: `Starhopper construction starts`,
@@ -131,7 +131,7 @@ export default [
         Starship prototype to test its Raptor engine in real flight conditions.
         <Image filename="starship-timeline/starhopper.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `First Starship customer`,
@@ -143,7 +143,7 @@ export default [
         Yusaku Maezawa, a Japanese billionaire.
         <Image filename="starship-timeline/dearmoon.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `Tooling for the rocket body delivered`,
@@ -156,7 +156,7 @@ export default [
         more adapted material.
         <Image filename="starship-timeline/bfrtool.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `Project downscaled`,
@@ -168,7 +168,7 @@ export default [
         diameter to a 9 meters one.
         <Image filename="starship-timeline/bfr.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `Elon Musks reveals SpaceX's plan for Mars`,
@@ -180,7 +180,7 @@ export default [
         aspirational goal of launching human crew to Mars by 2024.
         <Image filename="starship-timeline/its.jpg" />
       </p>
-    )
+    ),
   },
   {
     title: `First rocket landing`,
@@ -190,7 +190,7 @@ export default [
         For the first time, SpaceX succeeds in landing the first stage of its
         Falcon 9 rocket.
       </p>
-    )
+    ),
   },
   {
     title: `Raptor engine development starts`,
@@ -200,7 +200,7 @@ export default [
         SpaceX begins to design a methalox engine more powerful and capable than
         the Merlin-1D engine of the Falcon 9.
       </p>
-    )
+    ),
   },
   {
     title: `Elon Musk's bet`,
@@ -211,7 +211,7 @@ export default [
         Mars by "2020 or 2025". Musk has continued to reiterate this rough
         timeframe since.
       </p>
-    )
+    ),
   },
   {
     title: `Falcon 1 achieves orbit`,
@@ -221,7 +221,7 @@ export default [
         On the fourth try, SpaceX finally succeeds in delivering a payload into
         Earth orbit.
       </p>
-    )
+    ),
   },
   {
     title: `SpaceX is founded`,
@@ -232,6 +232,6 @@ export default [
         cheaper access to space.
         <Image filename="starship-timeline/spacex2002.jpg" />
       </p>
-    )
-  }
+    ),
+  },
 ];

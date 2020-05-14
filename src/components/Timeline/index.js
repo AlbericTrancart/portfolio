@@ -10,7 +10,7 @@ import {
 import { Timeline, Item, ItemContent, ItemDate, ItemTitle } from "./style";
 import contents from "./contents";
 
-export const isInViewport = element => {
+export const isInViewport = (element) => {
   if (!element) {
     return false;
   }
@@ -43,7 +43,7 @@ class StarshipTimeline extends React.Component {
   }
 
   updateVisibility() {
-    document.querySelectorAll("[data-timeline-item]").forEach(element => {
+    document.querySelectorAll("[data-timeline-item]").forEach((element) => {
       const title = element.getAttribute("data-timeline-item");
       // eslint-disable-next-line
       if (!this.state[title] && isInViewport(element)) {

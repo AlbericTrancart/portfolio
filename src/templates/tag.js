@@ -5,9 +5,9 @@ import View from "components/View";
 
 const TagPage = ({
   data: {
-    allMarkdownRemark: { edges: posts }
+    allMarkdownRemark: { edges: posts },
   },
-  pageContext
+  pageContext,
 }) => (
   <View>
     <h2>{pageContext.tag}</h2>

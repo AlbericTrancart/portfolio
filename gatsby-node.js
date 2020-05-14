@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: slug
+      value: slug,
     });
   }
 };
@@ -17,7 +17,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     graphql(`
       {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
@@ -33,7 +33,7 @@ exports.createPages = async ({ actions, graphql }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       const createdTagPages = [];
 
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -41,15 +41,15 @@ exports.createPages = async ({ actions, graphql }) => {
           path: node.fields.slug,
           component: path.resolve(`./src/templates/post.js`),
           context: {
-            slug: node.fields.slug
-          }
+            slug: node.fields.slug,
+          },
         });
 
         node.frontmatter.tags.push("Theatre");
         node.frontmatter.tags.push("Web accessibility");
         node.frontmatter.tags.push("Heavy metal");
         node.frontmatter.tags.push("Roleplaying");
-        node.frontmatter.tags.forEach(tag => {
+        node.frontmatter.tags.forEach((tag) => {
           if (createdTagPages.includes(tag)) {
             return;
           }
@@ -58,8 +58,8 @@ exports.createPages = async ({ actions, graphql }) => {
             path: `/tag/${slugify(tag, { lower: true })}`,
             component: path.resolve(`./src/templates/tag.js`),
             context: {
-              tag
-            }
+              tag,
+            },
           });
 
           createdTagPages.push(tag);

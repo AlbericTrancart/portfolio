@@ -6,7 +6,6 @@ import { graphql } from "gatsby";
 import GatsbyImage from "gatsby-background-image";
 import slugify from "slugify";
 import Divider from "components/Divider";
-import Image from "components/Image";
 import Link from "components/Link";
 import Tag from "components/Tag";
 import View from "components/View";

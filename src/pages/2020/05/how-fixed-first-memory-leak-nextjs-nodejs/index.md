@@ -13,7 +13,7 @@ I dreaded this moment because of the almost mystical nature of "memory leak" in 
 
 All of this would not have been possible without this great tutorial from Marmelab [How to track and fix a memory leak with NodeJS](https://marmelab.com/blog/2018/04/03/how-to-track-and-fix-memory-leak-with-nodejs.html).
 
-Here's how went the investigation:
+Here's how the investigation went:
 
 ## Setting up the local environment
 

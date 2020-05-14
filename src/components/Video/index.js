@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
-import styled from 'styled-components';
-import { Grid } from 'stylesheet';
+import React from "react";
+import ReactPlayer from "react-player";
+import styled from "styled-components";
+import { Grid } from "stylesheet";
 
 const VideoWrapper = styled.div`
   position: relative;
@@ -21,7 +21,12 @@ const VideoWrapper = styled.div`
 
 const Video = ({ youtubeId }) => (
   <VideoWrapper>
-    <ReactPlayer url={`https://www.youtube.com/embed/${youtubeId}?autoplay=0`} controls height="100%" width="100%" />
+    <ReactPlayer
+      url={`https://www.youtube.com/embed/${youtubeId}?autoplay=0`}
+      controls
+      height="100%"
+      width="100%"
+    />
   </VideoWrapper>
 );
 

@@ -1,13 +1,13 @@
 import { css } from "styled-components";
 
-export const Grid = size => `${size / 2}rem`;
+export const Grid = (size) => `${size / 2}rem`;
 
 const colors = {
   darkGrey: "#3a4145",
   lightGrey: "#78858d",
   lighterGrey: "#eaecee",
   blue: "#57a3e8",
-  white: "#ffffff"
+  white: "#ffffff",
 };
 
 export const colorPalette = {
@@ -23,13 +23,13 @@ export const colorPalette = {
 
   // Timeline
   timelineBackground: colors.lighterGrey,
-  contentBackground: "#f5f5f5"
+  contentBackground: "#f5f5f5",
 };
 
 export const breakpoints = {
   sm: "768px",
   md: "992px",
-  lg: "1400px"
+  lg: "1400px",
 };
 
 export const maxAppSize = "750px";
@@ -54,7 +54,7 @@ export const wrapped = css`
 `;
 
 const fonts = {
-  main: "IBM Plex Sans, sans-serif"
+  main: "IBM Plex Sans, sans-serif",
 };
 
 export const typography = {
@@ -65,7 +65,7 @@ export const typography = {
   `,
   small: css`
     font-size: 0.75rem;
-  `
+  `,
 };
 
 export const radius = "3px";
