@@ -63,8 +63,8 @@ const InfosContainer = styled.div`
 
 const IndexPage = ({
   data: {
-    allMarkdownRemark: { group, edges: posts }
-  }
+    allMarkdownRemark: { group, edges: posts },
+  },
 }) => {
   // Clone arrays to not reverse original list
   const tags = group.slice(0);
@@ -132,22 +132,6 @@ const IndexPage = ({
       <Divider />
 
       <section className="mtop">
-        <h2>Special pages</h2>
-        <PageList className="mtop">
-          <PageListItem>
-            <BackgroundImage
-              as={Image}
-              background
-              filename="starship-timeline.png"
-            />
-            <Link to="/starship-timeline">Starship Timeline</Link>
-          </PageListItem>
-        </PageList>
-      </section>
-
-      <Divider />
-
-      <section className="mtop">
         <h2>Posts</h2>
         <PageList className="mtop">
           {posts.map(
@@ -159,11 +143,11 @@ const IndexPage = ({
                   date,
                   tags: postTags,
                   thumbnail: {
-                    childImageSharp: { fluid: imageFluid }
+                    childImageSharp: { fluid: imageFluid },
                   },
-                  title
-                }
-              }
+                  title,
+                },
+              },
             }) => (
               <PageListItem key={id}>
                 <BackgroundImage fluid={imageFluid} />
@@ -172,7 +156,7 @@ const IndexPage = ({
                     <PostDate dateTime={date}>
                       {format(new Date(date), "MMMM dd, yyyy")}
                     </PostDate>
-                    {postTags.map(tag => (
+                    {postTags.map((tag) => (
                       <Fragment key={tag}>
                         <Tag to={`tag/${slugify(tag, { lower: true })}`}>
                           #{tag}
