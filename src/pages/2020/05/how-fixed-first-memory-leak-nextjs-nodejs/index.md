@@ -7,7 +7,7 @@ date: 2020-05-15
 tags: ["Web development"]
 ---
 
-Last week I had to debug my first memory leak: our server crashed at regular interval and the memory usage chart showed that it used all the available memory before needing a restart.
+Last week I had to debug my first memory leak: our server crashed at regular intervals and the memory usage chart showed that it used all the available memory before needing a restart.
 
 I dreaded this moment because of the almost mystical nature of "memory leak" in the software development vocabulary... but I found it actually quite easy to debug on NodeJS with all the tooling available.
 
@@ -57,7 +57,7 @@ With the Chrome DevTools I went to the Memory tab and took 4 snapshots of the me
 - One after a 50 seconds stress test
 - One after another 50 seconds stress test
 
-Each snapshot was took after waiting ~2 minutes to allow for the server to process all remaining requests and after triggering garbage collection through the Chrome DevTools (bin icon at the top left).
+Each snapshot was took after waiting ~2 minutes to allow for the server to process all remaining requests and after triggering garbage collection through the Chrome DevTools (bin icon on the top left).
 
 Here are the results:
 
@@ -97,7 +97,7 @@ Inspecting the 3 different heaps and sorting by Shallow size revealed that we we
 
 We were leaking about ~4.5 MB from closures, ~3.2MB from Objects and the rest from other variables.
 
-If we check the Retained size (the size of the object + all its children in the graph), we can see that all the leak can be attributed to the closures, which makes sense: and anonymous function will create other objects.
+If we check the Retained size (the size of the object + all its children in the graph), we can see that all the leak can be attributed to the closures, which makes sense: an anonymous function will create other objects.
 
 ![Screenshot of the closure source showing a Contenful file](image6.png)
 
