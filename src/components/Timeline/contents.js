@@ -68,24 +68,34 @@ export default [
     future: true,
   },
   {
-    title: `Starship Mk1 test failure`,
+    title: `Starship #5 flies`,
+    date: formatDate("2020-08-04"),
+    content: (
+      <p>
+        Starship #5 is the first to fly without exploding or failing on the pad. Starship #6 follows closely by doing the same hop.
+        <Video youtubeId="s1HA9LlFNM0" />
+      </p>
+    ),
+  },
+  {
+    title: `Starship #1 test failure`,
     date: formatDate("2019-11-20"),
     content: (
       <p>
         The first Starship prototype failed during a tank pressurization test.
         The team then decided to focus their efforts on the Mk3 prototype.
-        <Image filename="starship-timeline/starship-mk1-explosion.jpg" />
+        <Image filename="starship-timeline/starship-mk1-explosion.jpg" alt="" />
       </p>
     ),
   },
   {
-    title: `Starship Mk1 presentation`,
+    title: `Starship #1 presentation`,
     date: formatDate("2019-09-28"),
     content: (
       <p>
         SpaceX unveiled its first prototype of the Starship, with the goal of
         doing a 20km-high flight with it.
-        <Image filename="starship-timeline/starhopper-mk1-complete.jpg" />
+        <Image filename="starship-timeline/starhopper-mk1-complete.jpg" alt="" />
       </p>
     ),
   },
@@ -101,14 +111,14 @@ export default [
     ),
   },
   {
-    title: `Starhsip orbital prototypes construction starts`,
+    title: `Starship orbital prototypes construction starts`,
     date: formatDate("2019-05-14"),
     content: (
       <p>
         SpaceX has started building two high fidelity Starship prototypes: one
         in Florida, one in Texas. The first team to reach orbit and come back on
         land is the winner.
-        <Image filename="starship-timeline/florby.jpg" />
+        <Image filename="starship-timeline/florby.jpg" alt="" />
       </p>
     ),
   },
@@ -129,7 +139,7 @@ export default [
       <p>
         SpaceX contracted a water tower company to rapidly assemble a working
         Starship prototype to test its Raptor engine in real flight conditions.
-        <Image filename="starship-timeline/starhopper.jpg" />
+        <Image filename="starship-timeline/starhopper.jpg" alt="" />
       </p>
     ),
   },
@@ -141,7 +151,7 @@ export default [
         SpaceX announced its first crewed flight, targeting 2023 for a flight
         around the Moon. The crew will be composed of several artists lead by
         Yusaku Maezawa, a Japanese billionaire.
-        <Image filename="starship-timeline/dearmoon.jpg" />
+        <Image filename="starship-timeline/dearmoon.jpg" alt="" />
       </p>
     ),
   },
@@ -154,7 +164,7 @@ export default [
         tanks under a tent in Los Angeles. This tool was later scrapped because
         SpaceX chose to replace carbon fiber with stainless steel, a cheaper and
         more adapted material.
-        <Image filename="starship-timeline/bfrtool.jpg" />
+        <Image filename="starship-timeline/bfrtool.jpg" alt="" />
       </p>
     ),
   },
@@ -166,7 +176,7 @@ export default [
         To make the project more sustainable by making the rocket pay for
         itself, SpaceX downscaled the size of the rocket from a 12 meters
         diameter to a 9 meters one.
-        <Image filename="starship-timeline/bfr.jpg" />
+        <Image filename="starship-timeline/bfr.jpg" alt="" />
       </p>
     ),
   },

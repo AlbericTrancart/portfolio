@@ -67,10 +67,9 @@ To test its Raptor engine in real flight conditions, SpaceX contracted a water t
 
 ### Phase 3 - Starship prototypes - HAPPENING RIGHT NOW
 
-The next step is to test Starship in Earth's upper atmosphere, to validate a heat shielding technology and to prove that second stages can also be safely landed and reused. **SpaceX is currently building two high fidelity Starship prototypes: one in Florida, one in Texas.** The first team to reach orbit and come back on land is the winner.
+The next step is to test Starship in Earth's upper atmosphere, to validate a heat shielding technology and to prove that second stages can also be safely landed and reused. **SpaceX has setup a factory in Texas to crank out Starship vehicles.**
 
-![Starship prototype in Florida](./florida.jpg "Starship prototype in Florida")
-![Starship prototype in Texas](./texas.jpg "Starship prototype in Texas")
+![Starship prototype in Florida](./sn8.jpg "Starship prototype #8")
 
 ### Phase 4 - First commercial launch - 2021
 
