@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react"],
+  extends: ["airbnb", "prettier", "prettier"],
   plugins: ["react", "prettier", "jsx-a11y"],
   env: {
     browser: true,

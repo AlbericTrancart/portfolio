@@ -43,7 +43,6 @@ module.exports = {
             options: {
               maxWidth: 800,
               withWebp: true,
-              showCaptions: true
             },
           },
           {
@@ -63,9 +62,15 @@ module.exports = {
     // SEO
     `gatsby-plugin-robots-txt`,
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: "./src/images/alberictrancart.jpg",
+        name: `Albéric Trancart`,
+        short_name: `Albéric Trancart`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        icon: `./src/images/alberictrancart.jpg`,
       },
     },
     `gatsby-plugin-sitemap`,
