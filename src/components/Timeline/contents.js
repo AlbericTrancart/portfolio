@@ -68,6 +68,16 @@ export default [
     future: true,
   },
   {
+    title: `First Starship successfuly landing`,
+    date: formatDate("2021-05-05"),
+    content: (
+      <p>
+        After 4 failed landing attempts, SpaceX successfuly landed Starship SN15.
+        <Video youtubeId="z9eoubnO-pE" />
+      </p>
+    ),
+  },
+  {
     title: `Starship Mk1 test failure`,
     date: formatDate("2019-11-20"),
     content: (
