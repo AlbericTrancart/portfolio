@@ -51,7 +51,7 @@ Rocket stages are usually single use: they are thrown into the ocean after deliv
 
 ## Timelines
 
-The best thing is: **all of this is going to happen way sooner than you think**. The SpaceX team is hell-bent on landing a Starship on Mars by 2024. To achieve this goal, they are moving really, really fast. Here is an updated timeline of what has happened and is happening right now regarding Starship development:
+The best thing is: **all of this is going to happen way sooner than you think**. The SpaceX team is hell-bent on landing a Starship on Mars by 2026. To achieve this goal, they are moving really, really fast. Here is an updated timeline of what has happened and is happening right now regarding Starship development:
 
 ### Phase 1 - Raptor engine development - DONE
 
@@ -65,23 +65,23 @@ To test its Raptor engine in real flight conditions, SpaceX contracted a water t
 
 `youtube: https://www.youtube.com/embed/bYb3bfA6_sQ`
 
-### Phase 3 - Starship prototypes - HAPPENING RIGHT NOW
+### Phase 3 - Starship prototypes - DONE
 
-The next step is to test Starship in Earth's upper atmosphere, to validate a heat shielding technology and to prove that second stages can also be safely landed and reused. **SpaceX has setup a factory in Texas to crank out Starship vehicles.**
+The next step was to launch Starship prototypes to test landing trajectories to prove that second stages can also be safely recovered and reused. SpaceX also setup a factory in Boca Chica, Texas to crank out Starship vehicles. **After 4 failed landing attempts, SpaceX successfuly landed Starship SN11.**
 
-![Starship prototype in Florida](./sn8.jpg "Starship prototype #8")
+`youtube: https://www.youtube.com/watch?v=gjCSJIAKEPM`
 
-### Phase 4 - First commercial launch - 2021
+### Phase 4 - First orbital launch - HAPPENING RIGHT NOW
 
-SpaceX is already in talks with three potential customers for a commercial satellite launch in 2021. This will be a big milestone, because **it will mean that Starship is already cheaper and better than the Falcon 9**. Also, it will make the rocket pay for itself (which is an achievement, considering the size of the thing).
+SpaceX is targeting an first orbital launch to test the reentry of the vehicule in the upper atmosphere and validate the heat shielding technology. It will also feature the first use of the Super Heavy booster.
+
+![Super Heavy static fire](./superheavy.jpg)
+
+### Phase 5 - First commercial launch - 2022
+
+SpaceX is already in talks with three potential customers for a commercial satellite launch. This will be a big milestone, because **it will mean that Starship is already cheaper and better than the Falcon 9**. Also, it will make the rocket pay for itself (which is an achievement, considering the size of the thing).
 
 ![Starship skyrocketing](./2021.png)
-
-### Phase 5 - First landing on Mars - 2022
-
-While Starship will be developed to enter mass production and execute most SpaceX missions, two cargo Starships will be retired and launched towards Mars. **The goal will be to prove that Earth landing technologies also work on Mars.**
-
-![Cargo Starship landing on Mars](./2022.png)
 
 ### Phase 6 - First crewed trip around the Moon - 2023
 
@@ -89,15 +89,21 @@ After that, the next challenge will be to develop the crewed version and send pe
 
 ![Starship around the Moon](./2023.jpg)
 
-### Final phase - First human footprints on Mars - 2024
+### Phase 7 - First landing on Mars - 2024
 
-By 2024, Starship should have dozens of successful flights under its belt in the near-Earth space. **SpaceX's goal is to land two cargo and two crewed Starships on Mars in five years.** After that, the rest should be history.
+While Starship will be used to execute most SpaceX missions, two cargo Starships will be retired and launched towards Mars. **The goal will be to prove that Earth landing technologies also work on Mars.**
+
+![Cargo Starship landing on Mars](./2022.png)
+
+### Final phase - First human footprints on Mars - 2026 
+
+By 2026, Starship should have dozens of successful flights under its belt in the near-Earth space. **SpaceX's goal is to land two cargo and two crewed Starships on Mars in five years.** After that, the rest should be history.
 
 ![Crewed Starship on Mars](./2024.png)
 
 ## My take on the subject
 
-A Moon base and Mars colony in our lifetimes? _Sure as hell it will happen!_ But obviously, the 2024 goal seems really ambitious. I think the crewed version will take longer to develop as human-rating a rocket system for a 3-year journey will not be simple. **My bet is that the first cargo Starship will land on Mars in 2024 and that the first human footprints will happen before 2030.**
+A Moon base and Mars colony in our lifetimes? _Sure as hell it will happen!_ But obviously, the 2026 goal seems really ambitious. I think the crewed version will take longer to develop as human-rating a rocket system for a 3-year journey will not be simple. **My bet is that the first cargo Starship will land on Mars in 2024 and that the first human footprints will happen before 2030.**
 
 But thus far, SpaceX is on time according to the original timeline revealed in 2016. What you need to know is that _their internal schedule is even more ambitious than this official timeline!_ I'm not holding my breath, but they are the ones who already made the impossible possible by landing a rocket and reusing it profitably.
 

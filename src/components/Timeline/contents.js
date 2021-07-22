@@ -68,17 +68,7 @@ export default [
     future: true,
   },
   {
-    title: `Starship #5 flies`,
-    date: formatDate("2020-08-04"),
-    content: (
-      <p>
-        Starship #5 is the first to fly without exploding or failing on the pad. Starship #6 follows closely by doing the same hop.
-        <Video youtubeId="s1HA9LlFNM0" />
-      </p>
-    ),
-  },
-  {
-    title: `Starship #1 test failure`,
+    title: `Starship Mk1 test failure`,
     date: formatDate("2019-11-20"),
     content: (
       <p>
@@ -89,7 +79,7 @@ export default [
     ),
   },
   {
-    title: `Starship #1 presentation`,
+    title: `Starship Mk1 presentation`,
     date: formatDate("2019-09-28"),
     content: (
       <p>
