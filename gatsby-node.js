@@ -1,6 +1,6 @@
-const path = require("path");
-const slugify = require("slugify");
-const { createFilePath } = require("gatsby-source-filesystem");
+const path = require('path');
+const slugify = require('slugify');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -39,16 +39,16 @@ exports.createPages = async ({ actions, graphql }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/post.js`),
+          component: path.resolve(`./src/templates/post.tsx`),
           context: {
             slug: node.fields.slug,
           },
         });
 
-        node.frontmatter.tags.push("Theatre");
-        node.frontmatter.tags.push("Web accessibility");
-        node.frontmatter.tags.push("Heavy metal");
-        node.frontmatter.tags.push("Roleplaying");
+        node.frontmatter.tags.push('Theatre');
+        node.frontmatter.tags.push('Web accessibility');
+        node.frontmatter.tags.push('Heavy metal');
+        node.frontmatter.tags.push('Roleplaying');
         node.frontmatter.tags.forEach((tag) => {
           if (createdTagPages.includes(tag)) {
             return;
@@ -56,7 +56,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
           createPage({
             path: `/tag/${slugify(tag, { lower: true })}`,
-            component: path.resolve(`./src/templates/tag.js`),
+            component: path.resolve(`./src/templates/tag.tsx`),
             context: {
               tag,
             },

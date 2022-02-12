@@ -9,11 +9,14 @@ module.exports = {
   },
   plugins: [
     // Codebase
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
 
     // Assets
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-sharp`,
