@@ -18,13 +18,13 @@ export interface TimelineContent {
 export const timelineContent: TimelineContent[] = [
   {
     title: `Humans on Mars`,
-    date: `2024`,
+    date: `2026`,
     content: `SpaceX's goal is to land two cargo and two crewed Starships on Mars in 2024.`,
     future: true,
   },
   {
     title: `#dearMoon`,
-    date: `2023`,
+    date: `2024`,
     content: (
       <p>
         Yasuka Maezawa, a Japanese billionaire, has already bought the first
@@ -43,7 +43,7 @@ export const timelineContent: TimelineContent[] = [
   },
   {
     title: `Cargo landing on Mars`,
-    date: `2022`,
+    date: `2024`,
     content: (
       <p>
         Two cargo Starships will be launched towards Mars to prove that Earth
@@ -52,20 +52,10 @@ export const timelineContent: TimelineContent[] = [
     ),
     future: true,
   },
-  {
-    title: `First Starship satellite launch`,
-    date: `2021`,
-    content: (
-      <p>
-        SpaceX is already in talks with three potential customers for a
-        commercial satellite launch in 2021.
-      </p>
-    ),
-    future: true,
-  },
+
   {
     title: `First orbital launch`,
-    date: `2020`,
+    date: `2022`,
     content: (
       <p>
         SpaceX will test Starship in Earth's upper atmosphere, to validate a
@@ -74,6 +64,20 @@ export const timelineContent: TimelineContent[] = [
       </p>
     ),
     future: true,
+  },
+  {
+    title: `First stacking of Starship on top of Super Heavy`,
+    date: formatDate('2021-08-06'),
+    content: (
+      <p>
+        For the first time, the full rocket system was stacked on the Boca Chica
+        launchpad.
+        <Image
+          filename="starship-timeline/fullstack.jpg"
+          alt="Picture of Starship being positioned on top of Super Heavy"
+        />
+      </p>
+    ),
   },
   {
     title: `First Starship successfuly landing`,
@@ -93,7 +97,10 @@ export const timelineContent: TimelineContent[] = [
       <p>
         The first Starship prototype failed during a tank pressurization test.
         The team then decided to focus their efforts on the Mk3 prototype.
-        <Image filename="starship-timeline/starship-mk1-explosion.jpg" alt="" />
+        <Image
+          filename="starship-timeline/starship-mk1-explosion.jpg"
+          alt="A picture of the Mk1 prototype exploding"
+        />
       </p>
     ),
   },
