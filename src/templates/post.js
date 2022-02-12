@@ -5,7 +5,7 @@ import Content from "components/Content";
 import PostHeader from "components/PostHeader";
 import View from "components/View";
 
-const PostTemplate = ({ data }) => {
+function PostTemplate({ data }) {
   const {
     frontmatter,
     description,
@@ -39,7 +39,7 @@ const PostTemplate = ({ data }) => {
       </article>
     </View>
   );
-};
+}
 
 export const query = graphql`
   query($slug: String!) {

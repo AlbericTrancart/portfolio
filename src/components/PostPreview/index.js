@@ -13,8 +13,8 @@ const Description = styled.p`
   margin-top: ${Grid(1)};
 `;
 
-const PostPreview = ({ showDivider, post }) => (
-  <Container key={post.id}>
+function PostPreview({ showDivider, post }) {
+  return <Container key={post.id}>
     <PostHeader post={post} />
 
     <Description>
@@ -24,6 +24,6 @@ const PostPreview = ({ showDivider, post }) => (
 
     {showDivider && <Divider />}
   </Container>
-);
+}
 
 export default PostPreview;

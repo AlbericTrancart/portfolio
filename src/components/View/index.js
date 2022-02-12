@@ -12,14 +12,14 @@ const Content = styled.main`
   margin-top: ${Grid(4)};
 `;
 
-const View = ({ blankPage, children, isHomepage }) => (
-  <>
+function View({ blankPage, children, isHomepage }) {
+  return <>
     <StyleReset />
     <SEO />
     <Header />
     {blankPage ? children : <Content>{children}</Content>}
     <Footer isHomepage={isHomepage} />
   </>
-);
+}
 
 export default View;

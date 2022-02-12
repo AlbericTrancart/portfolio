@@ -1,6 +1,6 @@
 import React from "react";
 import Content from "components/Content";
-import Countdown from "./Countdown";
+import Countdown from "./Countdown"; 
 import {
   TimelineHeader,
   HeaderCountdown,

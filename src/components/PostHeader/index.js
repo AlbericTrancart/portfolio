@@ -26,7 +26,7 @@ const Banner = styled.img`
   margin-top: ${Grid(2)};
 `;
 
-const PostHeader = ({
+function PostHeader({
   post: {
     fields: { slug },
     frontmatter: {
@@ -41,8 +41,8 @@ const PostHeader = ({
     },
   },
   mainPage,
-}) => (
-  <header>
+}) {
+  return <header>
     <Infos>
       <PostDate dateTime={date}>
         {format(new Date(date), "MMMM dd, yyyy")}
@@ -70,6 +70,6 @@ const PostHeader = ({
       <Banner src={image} alt={title} />
     </Link>
   </header>
-);
+}
 
 export default PostHeader;

@@ -22,8 +22,8 @@ const Container = styled.footer`
   }
 `;
 
-const Footer = ({ isHomepage }) => (
-  <Container>
+function Footer({ isHomepage }) {
+  return <Container>
     {!isHomepage && <Link to="/#posts">Back to the home page</Link>}
     <Divider />
     Made with GatsbyJS, ❤ and other hipster technologies.
@@ -40,6 +40,6 @@ const Footer = ({ isHomepage }) => (
     </Link>
     .
   </Container>
-);
+}
 
 export default Footer;

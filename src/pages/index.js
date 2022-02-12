@@ -60,11 +60,11 @@ const InfosContainer = styled.div`
   }
 `;
 
-const IndexPage = ({
+function IndexPage({
   data: {
     allMarkdownRemark: { group, edges: posts },
   },
-}) => {
+}) {
   // Clone arrays to not reverse original list
   const tags = group.slice(0);
 
@@ -172,7 +172,7 @@ const IndexPage = ({
       </section>
     </View>
   );
-};
+}
 
 export default IndexPage;
 

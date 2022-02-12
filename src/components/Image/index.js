@@ -3,8 +3,8 @@ import { StaticQuery, graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 import Image from "gatsby-image";
 
-const Img = ({ background, filename, children, tag, ...rest }) => (
-  <StaticQuery
+function Img({ background, filename, children, tag, ...rest }) {
+  return <StaticQuery
     query={graphql`
       query {
         images: allFile {
@@ -43,6 +43,6 @@ const Img = ({ background, filename, children, tag, ...rest }) => (
       return <Image fluid={image.node.childImageSharp.fluid} {...rest} />;
     }}
   />
-);
+}
 
 export default Img;

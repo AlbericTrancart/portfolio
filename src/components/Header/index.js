@@ -71,7 +71,7 @@ const Bio = styled.p`
   margin-top: ${Grid(2)};
 `;
 
-const Header = () => {
+function Header() {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -136,6 +136,6 @@ const Header = () => {
       </Wrapper>
     </Container>
   );
-};
+}
 
 export default Header;

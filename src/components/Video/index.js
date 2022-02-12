@@ -19,8 +19,8 @@ const VideoWrapper = styled.div`
   }
 `;
 
-const Video = ({ youtubeId }) => (
-  <VideoWrapper>
+function Video({ youtubeId }) {
+  return <VideoWrapper>
     <ReactPlayer
       url={`https://www.youtube.com/embed/${youtubeId}?autoplay=0`}
       controls
@@ -28,6 +28,6 @@ const Video = ({ youtubeId }) => (
       width="100%"
     />
   </VideoWrapper>
-);
+}
 
 export default Video;
