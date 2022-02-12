@@ -1,10 +1,12 @@
 const path = require("path");
 
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier"],
-  plugins: ["react", "prettier", "jsx-a11y"],
+  parser: '@typescript-eslint/parser',
+  extends: ['plugin:@typescript-eslint/recommended',"airbnb", "prettier", "prettier"],
+  plugins: ["react", "prettier", "jsx-a11y",'@typescript-eslint'],
   env: {
     browser: true,
+    es6: true,
     node: true,
   },
   settings: {
@@ -49,5 +51,13 @@ module.exports = {
     ],
     "no-loop-func": 0,
     "react/no-array-index-key": 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/explicit-member-accessibility': 0,
+    '@typescript-eslint/camelcase': 0,
+    '@typescript-eslint/interface-name-prefix': 0,
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
 };

@@ -15,7 +15,10 @@ module.exports = {
 
     // Assets
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: { checkSupportedExtensions: false },
+    },
     `gatsby-plugin-styled-components`,
 
     // Articles
@@ -32,10 +35,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: 'gatsby-remark-external-links',
             options: {
-              target: "_blank",
-              rel: "noopener noreferrer",
+              target: '_blank',
+              rel: 'noopener noreferrer',
             },
           },
           {
