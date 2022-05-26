@@ -77,9 +77,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({
   const tags = group.slice(0);
 
   tags.push({ tag: 'Theatre', totalCount: 0 });
-  tags.push({ tag: 'Roleplaying', totalCount: 0 });
   tags.push({ tag: 'Heavy metal', totalCount: 0 });
-  tags.push({ tag: 'Web accessibility', totalCount: 0 });
 
   tags.sort((tagA, tagB) => {
     if (tagA.totalCount < tagB.totalCount) {

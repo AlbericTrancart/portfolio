@@ -46,9 +46,7 @@ exports.createPages = async ({ actions, graphql }) => {
         });
 
         node.frontmatter.tags.push('Theatre');
-        node.frontmatter.tags.push('Web accessibility');
         node.frontmatter.tags.push('Heavy metal');
-        node.frontmatter.tags.push('Roleplaying');
         node.frontmatter.tags.forEach((tag) => {
           if (createdTagPages.includes(tag)) {
             return;
