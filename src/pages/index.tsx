@@ -30,7 +30,7 @@ const TagsList = styled.ul`
   text-indent: 0;
 
   > li {
-    display: inline;
+    display: block;
   }
 `;
 
@@ -109,9 +109,14 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({
         </p>
 
         <TagsList className="mtop" style={{ lineHeight: '1.1em' }}>
-          {tags.map(({ tag }) => (
+          {tags.map(({ tag, totalCount }) => (
             <li key={tag}>
-              <Tag to={`/tag/${slugify(tag, { lower: true })}`}>#{tag}</Tag>{' '}
+              <Tag
+                to={`/tag/${slugify(tag, { lower: true })}`}
+                title={`${totalCount} posts about ${tag}`}
+              >
+                #{tag}
+              </Tag>{' '}
             </li>
           ))}
         </TagsList>
