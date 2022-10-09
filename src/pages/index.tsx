@@ -103,9 +103,9 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({
         <h2>Bio</h2>
 
         <p className="mtop">
-          Currently web developer @ Theodo, I studied civil engineering at the
-          École Nationale des Ponts et Chaussées (ENPC). I am passionate about a
-          variety of topics, including:
+          Currently tech lead &amp; coach @ Theodo, I studied civil engineering
+          at the École Nationale des Ponts et Chaussées (ENPC). I am passionate
+          about a variety of topics, including:
         </p>
 
         <TagsList className="mtop" style={{ lineHeight: '1.1em' }}>
