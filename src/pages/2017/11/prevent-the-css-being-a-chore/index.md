@@ -4,7 +4,7 @@ description: 'Last month I presented a talk @ HumanTalks Paris about CSS and wha
 slug: prevent-the-css-being-a-chore
 thumbnail: ./thumbnail.jpg
 date: 2017-11-23
-tags: ['Meetup', 'Web development', 'CSS']
+tags: ['Public Speaking', 'Web development', 'CSS']
 ---
 
 Last month I presented a talk at [HumanTalks Paris](https://twitter.com/humantalksparis) about CSS and what you can do to prevent it from being a chore. Having unreadable CSS files of thousands of lines is neither fun nor good for business.

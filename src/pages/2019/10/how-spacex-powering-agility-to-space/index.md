@@ -4,7 +4,7 @@ description: 'Last month I presented a talk @ HumanTalks Paris about how SpaceX 
 slug: how-spacex-powering-agility-to-space
 thumbnail: ./thumbnail.jpg
 date: 2019-10-27
-tags: ['Meetup', 'Space exploration']
+tags: ['Public Speaking', 'Space exploration']
 ---
 
 Last month I presented a talk at [HumanTalks Paris](https://twitter.com/humantalksparis) about how SpaceX is using agile methods from the Silicon Valley and apply it to building rockets and go to Mars.

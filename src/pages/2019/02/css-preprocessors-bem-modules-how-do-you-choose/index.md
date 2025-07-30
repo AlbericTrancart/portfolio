@@ -4,7 +4,7 @@ description: 'Last month I presented a talk @ HumanTalks Paris about all the CSS
 slug: css-preprocessors-bem-modules-how-do-you-choose
 thumbnail: ./thumbnail.jpg
 date: 2019-02-21
-tags: ['Meetup', 'Web development', 'CSS']
+tags: ['Public Speaking', 'Web development', 'CSS']
 ---
 
 Last month I presented a talk at [HumanTalks Paris](https://twitter.com/humantalksparis) (and [ParisJS later on with more in-depth details](https://www.youtube.com/watch?v=3ztP8ujDkhI)) about all the CSS tools available, and how to decide which one to use or not.

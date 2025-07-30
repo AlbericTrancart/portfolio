@@ -30,7 +30,8 @@ const TagsList = styled.ul`
   text-indent: 0;
 
   > li {
-    display: block;
+    display: inline;
+    margin-right: ${Grid(1.5)};
   }
 `;
 
@@ -113,7 +114,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({
                 to={`/tag/${slugify(tag, { lower: true })}`}
                 title={`${totalCount} posts about ${tag}`}
               >
-                #{tag}
+                #{tag} ({totalCount})
               </Tag>{' '}
             </li>
           ))}

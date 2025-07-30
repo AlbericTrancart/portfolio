@@ -4,7 +4,7 @@ description: 'Last month I presented a talk @ HumanTalks Paris about how to quic
 slug: how-to-create-accessibility-culture-from-scratch
 thumbnail: ./thumbnail.jpg
 date: 2021-10-12
-tags: ['Meetup', 'Web development', 'Web accessibility']
+tags: ['Public Speaking', 'Web development', 'Web accessibility']
 ---
 
 Last month I presented a talk at [HumanTalks Paris](https://twitter.com/humantalksparis) about how we quickstarted our accessibility efforts at [Theodo](https://www.theodo.fr/).
