@@ -6,6 +6,7 @@ import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
 import { colorPalette, Grid, typography } from 'stylesheet';
 import { Post } from 'components/types';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Infos = styled.span`
   ${typography.small}
@@ -22,7 +23,7 @@ const PostDate = styled.time`
   margin-right: ${Grid(1)};
 `;
 
-const Banner = styled.img`
+const Banner = styled(GatsbyImage)`
   width: 100%;
   margin-top: ${Grid(2)};
 `;
@@ -38,9 +39,7 @@ export const PostHeader: React.FC<Props> = ({
     frontmatter: {
       date,
       thumbnail: {
-        childImageSharp: {
-          fluid: { src: image },
-        },
+        childImageSharp: { gatsbyImageData },
       },
       title,
       tags,
@@ -73,7 +72,7 @@ export const PostHeader: React.FC<Props> = ({
       </h3>
     )}
     <Link to={slug}>
-      <Banner src={image} alt={title} />
+      <Banner image={gatsbyImageData} alt={title} />
     </Link>
   </header>
 );

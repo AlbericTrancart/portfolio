@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
 import format from 'date-fns/format';
 import { graphql, PageProps } from 'gatsby';
-import GatsbyImage from 'gatsby-background-image';
 import slugify from 'slugify';
 import { Divider } from 'components/Divider';
 import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
 import { View } from 'components/View';
 import { Post } from 'components/types';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const PageList = styled.ul`
   display: grid;
@@ -36,11 +36,9 @@ const TagsList = styled.ul`
 
 const BackgroundImage = styled(GatsbyImage)`
   width: 20%;
-  padding-bottom: 15%;
 
   @media (min-width: ${breakpoints.md}) {
     width: ${Grid(12)};
-    padding-bottom: ${Grid(8)};
   }
 
   flex-shrink: 0;
@@ -154,14 +152,14 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({
                   date,
                   tags: postTags,
                   thumbnail: {
-                    childImageSharp: { fluid: imageFluid },
+                    childImageSharp: { gatsbyImageData: imageGatsbyData },
                   },
                   title,
                 },
               },
             }) => (
               <PageListItem key={id}>
-                <BackgroundImage fluid={imageFluid} />
+                <BackgroundImage image={imageGatsbyData} alt="" />
                 <div>
                   <InfosContainer>
                     <PostDate dateTime={date}>
@@ -200,12 +198,7 @@ export const postFields = graphql`
       tags
       thumbnail {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-          resize(width: 800) {
-            src
-          }
+          gatsbyImageData(formats: [AUTO, WEBP])
         }
       }
       title
@@ -217,9 +210,9 @@ export const postFields = graphql`
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       totalCount
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         tag: fieldValue
         totalCount
       }

@@ -1,4 +1,4 @@
-import { IFluidObject } from 'gatsby-background-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface Post {
   id: string;
@@ -12,7 +12,7 @@ export interface Post {
     tags: string[];
     title: string;
     thumbnail: {
-      childImageSharp: { fluid: IFluidObject; resize: IFluidObject };
+      childImageSharp: { gatsbyImageData: IGatsbyImageData };
     };
   };
   html: string;

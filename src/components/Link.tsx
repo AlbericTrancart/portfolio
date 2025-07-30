@@ -34,7 +34,7 @@ export const StyledNormalLink = styled.a`
 `;
 
 export const Link: React.FC<
-  Partial<GatsbyLinkProps<unknown>> & { href?: string; as?: string }
+  Partial<GatsbyLinkProps<unknown>> & { href?: string; as?: string } & Props
 > = ({ children, href, ...rest }) =>
   href !== undefined ? (
     /* @ts-expect-error lazy to find the right type */

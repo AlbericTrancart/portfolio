@@ -19,7 +19,8 @@ const PostTemplate: React.FC<PageProps<DataProps>> = ({ data }) => {
   } = data.markdownRemark;
   const { title, thumbnail } = frontmatter;
 
-  const image = thumbnail.childImageSharp.resize.src;
+  const image =
+    thumbnail.childImageSharp.gatsbyImageData.images.fallback?.src ?? '';
 
   return (
     <View>
