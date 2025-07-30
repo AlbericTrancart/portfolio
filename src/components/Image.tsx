@@ -1,26 +1,13 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import BackgroundImage, {
-  IFluidObject,
-  IntrinsicTags,
-} from 'gatsby-background-image';
-import GatsbyImage from 'gatsby-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface Props {
   alt: string;
-  background?: boolean;
   filename: string;
-  tag?: IntrinsicTags;
-  children?: ReactNode;
 }
 
-export const Image: React.FC<Props> = ({
-  background = false,
-  filename,
-  children,
-  tag,
-  ...rest
-}) => (
+export const Image: React.FC<Props> = ({ filename, ...rest }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -30,9 +17,7 @@ export const Image: React.FC<Props> = ({
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 2560) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(formats: [AUTO, WEBP])
               }
             }
           }
@@ -44,7 +29,9 @@ export const Image: React.FC<Props> = ({
         edges: {
           node: {
             relativePath: string;
-            childImageSharp: { fluid: IFluidObject };
+            childImageSharp: {
+              gatsbyImageData: IGatsbyImageData;
+            };
           };
         }[];
       };
@@ -56,21 +43,12 @@ export const Image: React.FC<Props> = ({
         return null;
       }
 
-      if (background) {
-        return (
-          // @ts-expect-error lazy to find the right type
-          <BackgroundImage
-            Tag={tag}
-            fluid={image.node.childImageSharp.fluid}
-            {...rest}
-          >
-            {children}
-          </BackgroundImage>
-        );
-      }
-
-      // @ts-expect-error lazy to find the right type
-      return <GatsbyImage fluid={image.node.childImageSharp.fluid} {...rest} />;
+      return (
+        <GatsbyImage
+          image={image.node.childImageSharp.gatsbyImageData}
+          {...rest}
+        />
+      );
     }}
   />
 );
