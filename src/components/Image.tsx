@@ -1,13 +1,13 @@
-import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import React, { JSX } from 'react';
 
 interface Props {
   alt: string;
   filename: string;
 }
 
-export const Image: React.FC<Props> = ({ filename, ...rest }) => (
+export const Image = ({ filename, ...rest }: Props): JSX.Element => (
   <StaticQuery
     query={graphql`
       query {

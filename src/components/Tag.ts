@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link } from 'components/Link';
+import styled from 'styled-components';
 import { typography } from 'stylesheet';
 
 export const Tag = styled(Link)`

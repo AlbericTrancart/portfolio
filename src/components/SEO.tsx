@@ -1,23 +1,21 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby';
 import { SiteMetadata } from 'components/types';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { JSX } from 'react';
+import { Helmet } from 'react-helmet';
 
-export const SEO: React.FC = () => {
-  const { site } = useStaticQuery<SiteMetadata>(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            siteUrl
-          }
+export const SEO = (): JSX.Element => {
+  const { site } = useStaticQuery<SiteMetadata>(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          siteUrl
         }
       }
-    `,
-  );
+    }
+  `);
 
   const { title, description, author, siteUrl } = site.siteMetadata;
 

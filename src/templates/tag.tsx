@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql, PageProps } from 'gatsby';
 import { PostPreview } from 'components/PostPreview';
 import { View } from 'components/View';
 import { Post } from 'components/types';
+import { graphql, PageProps } from 'gatsby';
+import React, { JSX } from 'react';
 
 interface DataProps {
   allMarkdownRemark: {
@@ -10,12 +10,12 @@ interface DataProps {
   };
 }
 
-const TagPage: React.FC<PageProps<DataProps>> = ({
+const TagPage = ({
   data: {
     allMarkdownRemark: { edges: posts },
   },
   pageContext,
-}) => (
+}: PageProps<DataProps>): JSX.Element => (
   <View>
     {/* @ts-expect-error not in Gatsby source type */}
     <h2>{pageContext.tag}</h2>

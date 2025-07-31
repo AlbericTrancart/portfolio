@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { graphql, useStaticQuery } from 'gatsby';
 import { Image } from 'components/Image';
 import { Link, StyledNormalLink } from 'components/Link';
-import { breakpoints, colorPalette, Grid, wrapped } from 'stylesheet';
-import { GitHub, Linkedin, Twitter } from 'react-feather';
 import { SiteMetadata } from 'components/types';
+import { graphql, useStaticQuery } from 'gatsby';
+import React, { JSX } from 'react';
+import { GitHub, Linkedin, Twitter } from 'react-feather';
+import styled from 'styled-components';
+import { breakpoints, colorPalette, Grid, wrapped } from 'stylesheet';
 
 const Container = styled.header`
   background-color: ${colorPalette.primary};
@@ -72,18 +72,16 @@ const Bio = styled.p`
   margin-top: ${Grid(2)};
 `;
 
-export const Header: React.FC = () => {
-  const { site } = useStaticQuery<SiteMetadata>(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            description
-          }
+export const Header = (): JSX.Element => {
+  const { site } = useStaticQuery<SiteMetadata>(graphql`
+    query {
+      site {
+        siteMetadata {
+          description
         }
       }
-    `,
-  );
+    }
+  `);
 
   return (
     <Container>

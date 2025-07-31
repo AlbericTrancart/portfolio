@@ -1,16 +1,16 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { graphql, PageProps } from 'gatsby';
 import { Content } from 'components/Content';
 import { PostHeader } from 'components/PostHeader';
 import { View } from 'components/View';
 import { Post } from 'components/types';
+import { graphql, PageProps } from 'gatsby';
+import React, { JSX } from 'react';
+import { Helmet } from 'react-helmet';
 
 interface DataProps {
   markdownRemark: Post;
 }
 
-const PostTemplate: React.FC<PageProps<DataProps>> = ({ data }) => {
+const PostTemplate = ({ data }: PageProps<DataProps>): JSX.Element => {
   const {
     frontmatter,
     description,
@@ -41,6 +41,7 @@ const PostTemplate: React.FC<PageProps<DataProps>> = ({ data }) => {
 
       <article>
         <PostHeader post={data.markdownRemark} mainPage />
+        {/* eslint-disable-next-line risxss/catch-potential-xss-react */}
         <Content as="section" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </View>

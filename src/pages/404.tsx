@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
 import { navigate } from 'gatsby';
+import { useEffect } from 'react';
 
 const NotFoundPage = () => {
   useEffect(() => {
-    // eslint-disable-next-line no-void
     void navigate('/');
   }, []);
 

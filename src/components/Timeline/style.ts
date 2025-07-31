@@ -35,7 +35,9 @@ export const ItemContent = styled.article`
   color: ${colorPalette.text};
   border-radius: ${radius};
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s;
+  transition:
+    transform 0.8s ease-in-out 0s,
+    opacity 0.8s ease-in-out 0s;
 `;
 
 export const ItemTitle = styled.h2`

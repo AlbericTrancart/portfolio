@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
 import { Grid } from 'stylesheet';
@@ -23,7 +23,7 @@ interface Props {
   youtubeId: string;
 }
 
-export const Video: React.FC<Props> = ({ youtubeId }) => (
+export const Video = ({ youtubeId }: Props): JSX.Element => (
   <VideoWrapper>
     <ReactPlayer
       url={`https://www.youtube.com/embed/${youtubeId}?autoplay=0`}

@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
 import { Divider } from 'components/Divider';
 import { Link } from 'components/Link';
 import { PostHeader } from 'components/PostHeader';
-import { Grid } from 'stylesheet';
 import { Post } from 'components/types';
+import React, { JSX } from 'react';
+import styled from 'styled-components';
+import { Grid } from 'stylesheet';
 
 const Container = styled.article`
   margin-top: ${Grid(1)};
@@ -19,7 +19,10 @@ interface Props {
   post: Post;
 }
 
-export const PostPreview: React.FC<Props> = ({ showDivider = false, post }) => (
+export const PostPreview = ({
+  showDivider = false,
+  post,
+}: Props): JSX.Element => (
   <Container key={post.id}>
     <PostHeader post={post} />
 

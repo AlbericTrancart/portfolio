@@ -1,10 +1,9 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
-
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
-import { StyleReset } from 'components/StyleReset';
 import { SEO } from 'components/SEO';
+import { StyleReset } from 'components/StyleReset';
+import React, { JSX, ReactNode } from 'react';
+import styled from 'styled-components';
 import { Grid, wrapped } from 'stylesheet';
 
 const Content = styled.main`
@@ -18,11 +17,11 @@ interface Props {
   isHomepage?: boolean;
 }
 
-export const View: React.FC<Props> = ({
+export const View = ({
   blankPage = false,
   children,
   isHomepage = false,
-}) => (
+}: Props): JSX.Element => (
   <>
     <StyleReset />
     <SEO />

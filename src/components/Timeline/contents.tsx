@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
-import format from 'date-fns/format';
 import { Image } from 'components/Image';
 import { Link } from 'components/Link';
 import { Video } from 'components/Video';
+import format from 'date-fns/format';
+import React, { ReactNode } from 'react';
 
 const DATE_FORMAT = 'dd MMM yyyy';
 const formatDate = (dateString: string) =>
@@ -58,7 +58,7 @@ export const timelineContent: TimelineContent[] = [
     date: `2022`,
     content: (
       <p>
-        SpaceX will test Starship in Earth's upper atmosphere, to validate a
+        SpaceX will test Starship in Earth’s upper atmosphere, to validate a
         heat shielding technology and to prove that second stages can also be
         safely landed and reused.
       </p>
@@ -240,7 +240,7 @@ export const timelineContent: TimelineContent[] = [
     content: (
       <p>
         During an interview, Elon Musk made a bet that SpaceX would put a man on
-        Mars by "2020 or 2025". Musk has continued to reiterate this rough
+        Mars by 2020 or 2025. Musk has continued to reiterate this rough
         timeframe since.
       </p>
     ),

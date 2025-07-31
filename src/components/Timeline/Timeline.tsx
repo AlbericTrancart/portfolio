@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
 import { Content } from 'components/Content';
+import { timelineContent } from 'components/Timeline/contents';
 import {
   Item,
   ItemContent,
@@ -7,7 +7,7 @@ import {
   ItemTitle,
   TimelineContent,
 } from 'components/Timeline/style';
-import { timelineContent } from 'components/Timeline/contents';
+import React, { JSX, useEffect, useRef, useState } from 'react';
 
 export const isInViewport = (element?: Element) => {
   if (!element) {
@@ -16,7 +16,9 @@ export const isInViewport = (element?: Element) => {
 
   const rect = element.getBoundingClientRect();
   const viewportHeight =
-    window.innerHeight || document.documentElement.clientHeight;
+    window.innerHeight !== 0
+      ? window.innerHeight
+      : document.documentElement.clientHeight;
 
   return rect.top >= -viewportHeight && rect.top < viewportHeight;
 };
@@ -28,7 +30,7 @@ const defaultVisibleState = timelineContent.reduce(
 
 type VisibleState = Record<string, boolean>;
 
-export const Timeline: React.FC = () => {
+export const Timeline = (): JSX.Element => {
   const [visibleItems, setVisibleItems] =
     useState<VisibleState>(defaultVisibleState);
   const stateRef = useRef(visibleItems);
@@ -63,12 +65,12 @@ export const Timeline: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', updateVisibility);
     };
+    // eslint-disable-next-line
   }, []);
 
   return (
     <TimelineContent id="timeline">
       {timelineContent.map(({ content, date, future, title }, index) => (
-        // eslint-disable-next-line
         <Item
           key={title}
           future={future}

@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
-import styled from 'styled-components';
-import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
-import format from 'date-fns/format';
-import { graphql, PageProps } from 'gatsby';
-import slugify from 'slugify';
 import { Divider } from 'components/Divider';
 import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
 import { View } from 'components/View';
 import { Post } from 'components/types';
+import format from 'date-fns/format';
+import { graphql, PageProps } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import React, { Fragment, JSX } from 'react';
+import slugify from 'slugify';
+import styled from 'styled-components';
+import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
 
 const PageList = styled.ul`
   display: grid;
@@ -67,11 +67,11 @@ interface DataProps {
   };
 }
 
-const IndexPage: React.FC<PageProps<DataProps>> = ({
+const IndexPage = ({
   data: {
     allMarkdownRemark: { group, edges: posts },
   },
-}) => {
+}: PageProps<DataProps>): JSX.Element => {
   // Clone arrays to not reverse original list
   const tags = group.slice(0);
 

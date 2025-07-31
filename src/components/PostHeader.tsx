@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import slugify from 'slugify';
-import format from 'date-fns/format';
 import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
-import { colorPalette, Grid, typography } from 'stylesheet';
 import { Post } from 'components/types';
+import format from 'date-fns/format';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import React, { JSX } from 'react';
+import slugify from 'slugify';
+import styled from 'styled-components';
+import { colorPalette, Grid, typography } from 'stylesheet';
 
 const Infos = styled.span`
   ${typography.small}
@@ -33,7 +33,7 @@ interface Props {
   mainPage?: boolean;
 }
 
-export const PostHeader: React.FC<Props> = ({
+export const PostHeader = ({
   post: {
     fields: { slug },
     frontmatter: {
@@ -46,7 +46,7 @@ export const PostHeader: React.FC<Props> = ({
     },
   },
   mainPage = false,
-}) => (
+}: Props): JSX.Element => (
   <header>
     <Infos>
       <PostDate dateTime={date}>
