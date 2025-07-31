@@ -6,7 +6,7 @@
     "paths": {
       "components/*": ["components/*"],
       "pages/*": ["pages/*"],
-      "stylesheet": ["stylesheet"],
+      "stylesheet": ["stylesheet"]
     },
     "allowJs": true,
     "skipLibCheck": true,

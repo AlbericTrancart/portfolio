@@ -13,6 +13,7 @@
     "test": "yarn test:lint"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
     "date-fns": "^2.13.0",
     "gatsby": "^5.0.0",
     "gatsby-plugin-canonical-urls": "^5.0.0",
@@ -48,12 +49,11 @@
     "react-player": "^2.0.1",
     "react-scrollable-anchor": "^0.6.1",
     "slugify": "^1.4.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@types/react-helmet": "^6.1.5",
-    "@types/styled-components": "^5.1.22",
     "eslint": "^9.0.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-config-prettier": "^10.0.0",
