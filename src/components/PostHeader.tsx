@@ -6,15 +6,21 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { JSX } from 'react';
 import slugify from 'slugify';
 import styled from 'styled-components';
-import { colorPalette, Grid, typography } from 'stylesheet';
+import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
 
 const Infos = styled.span`
+  display: flex;
+  flex-direction: column;
+  gap: ${Grid(0.5)};
+
+  @media (min-width: ${breakpoints.sm}) {
+    flex-direction: row;
+    align-items: center;
+    gap: ${Grid(1)};
+  }
+
   ${typography.small}
   word-break: break-word;
-
-  > ${Tag}:not(:last-child) {
-    margin-right: ${Grid(1)};
-  }
 `;
 
 const PostDate = styled.time`
