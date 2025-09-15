@@ -1,10 +1,10 @@
 ---
 title: "SpaceX's Starship, the rocket that will make history - explained in 5 minutes"
-description: "We are on the brink of a revolution in space travel tech. It is my pleasure to share the excitement by explaining what it is, why it is important, how and when it will happen. This one will be in the history books, so you better learn about it!"
+description: 'We are on the brink of a revolution in space travel tech. It is my pleasure to share the excitement by explaining what it is, why it is important, how and when it will happen. This one will be in the history books, so you better learn about it!'
 slug: spacex-starship-the-rocket-that-will-make-history-explained-in-5-minutes
 thumbnail: ./thumbnail.jpg
 date: 2019-08-28
-tags: ["Space exploration"]
+tags: ['Space exploration']
 ---
 
 We are on the brink of a revolution in space travel tech. It is my pleasure to share the excitement by explaining what it is, why it is important, how and when it will happen. This one will be in the history books, so you better learn about it!
@@ -45,7 +45,7 @@ _Reusability._
 
 Rocket stages are usually single use: they are thrown into the ocean after delivering their payloads to orbit. With Falcon 9, **SpaceX has already proven that landing rocket boosters and reusing them is possible _and_ profitable.** However, the company has only reused first stages so far, which means that a lot of costly parts must still be manufactured for each launch.
 
-![Two Falcon Heavy boosters landing at once](./reuse.jpg "Two Falcon 9 boosters landing simultaneously")
+![Two Falcon Heavy boosters landing at once](./reuse.jpg 'Two Falcon 9 boosters landing simultaneously')
 
 **Contrary to Falcon 9, Starship is big enough and has enough fuel margins that it will be possible to recover and reuse both stages**, making it the first 100% reusable rocket system in history. With airplane-like reliability, the only real cost is the fuel - about ~$500,000 for a fully-fueled Starship. Amortize the manufacturing cost of both stages over 100 launches, add some margins and you get the $5,000,000/100 tons or \$50/kg price tag to Low Earth orbit.
 
@@ -57,7 +57,7 @@ The best thing is: **all of this is going to happen way sooner than you think**.
 
 The Raptor engine is the rocket engine that powers Starship. They are _super high tech_ by rocket engine standards and Super Heavy/Starship will have more than 40 of them. As it's the single most complicated system in the rocket, its development began around 2012. After a lot of testing, **Raptor has entered mass production in 2019.**
 
-![A raptor engine firing](./raptor.png "A raptor engine firing")
+![A raptor engine firing](./raptor.png 'A raptor engine firing')
 
 ### Phase 2 - Starhopper low-fidelity prototype - DONE
 
@@ -95,7 +95,7 @@ While Starship will be used to execute most SpaceX missions, two cargo Starships
 
 ![Cargo Starship landing on Mars](./2022.png)
 
-### Final phase - First human footprints on Mars - 2026 
+### Final phase - First human footprints on Mars - 2026
 
 By 2026, Starship should have dozens of successful flights under its belt in the near-Earth space. **SpaceX's goal is to land two cargo and two crewed Starships on Mars in five years.** After that, the rest should be history.
 
@@ -109,7 +109,6 @@ But thus far, SpaceX is on time according to the original timeline revealed in 2
 
 ## If you want to...
 
-- See the update timeline, you can checkout my [Starship Timeline](/starship-timeline)
 - Ask any question, you can tweet them [@alberictrancart](https://twitter.com/alberictrancart)
 - Know more about Starship, Raptor engine or anything related to rocket science, [here is a great Starship compendium](https://www.elonx.net/super-heavy-starship-compendium/)
 - Stay up to date with Starship infos, the [r/spacex](https://www.reddit.com/r/spacex/) Reddit community is the best resource but you can also follow me on Twitter ;)
