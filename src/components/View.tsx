@@ -3,7 +3,7 @@ import { Header } from 'components/Header';
 import { SEO } from 'components/SEO';
 import { StyleReset } from 'components/StyleReset';
 import React, { JSX, ReactNode } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { Grid, wrapped } from 'stylesheet';
 
 const Content = styled.main`

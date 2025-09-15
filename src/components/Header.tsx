@@ -4,7 +4,7 @@ import { SiteMetadata } from 'components/types';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { JSX } from 'react';
 import { GitHub, Linkedin, Twitter } from 'react-feather';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { breakpoints, colorPalette, Grid, wrapped } from 'stylesheet';
 
 const Container = styled.header`

@@ -1,7 +1,7 @@
 import { Divider } from 'components/Divider';
 import { Link } from 'components/Link';
 import React, { JSX } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { colorPalette, Grid, typography, wrapped } from 'stylesheet';
 
 const Container = styled.footer`

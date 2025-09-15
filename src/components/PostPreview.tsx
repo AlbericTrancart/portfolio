@@ -3,7 +3,7 @@ import { Link } from 'components/Link';
 import { PostHeader } from 'components/PostHeader';
 import { Post } from 'components/types';
 import React, { JSX } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { Grid } from 'stylesheet';
 
 const Container = styled.article`

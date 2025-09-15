@@ -5,7 +5,7 @@ import format from 'date-fns/format';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { JSX } from 'react';
 import slugify from 'slugify';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
 
 const Infos = styled.span`

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import { css, styled } from 'styled-components';
 import { colorPalette, Grid } from 'stylesheet';
 
 export const dividerStyle = css`

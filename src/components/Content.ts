@@ -1,6 +1,6 @@
 import { dividerStyle } from 'components/Divider';
 import { linkStyle } from 'components/Link';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { breakpoints, colorPalette, Grid } from 'stylesheet';
 
 export const Content = styled.div`

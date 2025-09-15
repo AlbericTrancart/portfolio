@@ -8,7 +8,7 @@ import { graphql, PageProps } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { Fragment, JSX } from 'react';
 import slugify from 'slugify';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { breakpoints, colorPalette, Grid, typography } from 'stylesheet';
 
 const PageList = styled.ul`
