@@ -59,7 +59,7 @@ export const PostHeader = ({
         {format(new Date(date), 'MMMM dd, yyyy')}
       </PostDate>
       {tags.map((tag) => (
-        <Tag key={tag} to={`tag/${slugify(tag, { lower: true })}`}>
+        <Tag key={tag} to={`/tag/${slugify(tag, { lower: true })}`}>
           #{tag}
         </Tag>
       ))}

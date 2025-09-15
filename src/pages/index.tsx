@@ -168,7 +168,7 @@ const IndexPage = ({
                     </PostDate>
                     {postTags.map((tag) => (
                       <Fragment key={tag}>
-                        <Tag to={`tag/${slugify(tag, { lower: true })}`}>
+                        <Tag to={`/tag/${slugify(tag, { lower: true })}`}>
                           #{tag}
                         </Tag>{' '}
                       </Fragment>
