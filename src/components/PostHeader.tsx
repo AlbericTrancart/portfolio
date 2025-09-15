@@ -1,7 +1,7 @@
 import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
 import { Post } from 'components/types';
-import format from 'date-fns/format';
+import { format } from 'date-fns';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { JSX } from 'react';
 import slugify from 'slugify';

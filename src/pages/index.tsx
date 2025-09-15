@@ -3,7 +3,7 @@ import { Link } from 'components/Link';
 import { Tag } from 'components/Tag';
 import { View } from 'components/View';
 import { Post } from 'components/types';
-import format from 'date-fns/format';
+import { format } from 'date-fns';
 import { graphql, PageProps } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React, { Fragment, JSX } from 'react';
