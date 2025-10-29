@@ -32,7 +32,7 @@ When I join a project, here are the broken windows I usually look at:
 - untreated errors/warnings (linter, console…)
 - dead code
 - inconsistent file structure
-- lava layer antipatterns (unfinished tech refactors)
+- lava layer antipatterns (unfinished tech refactorings)
 - outdated dependencies
 
 On the flip side, a clean, up-to-date, and well-organized codebase makes devs want to do things well, encourages quality, and prevents defects.

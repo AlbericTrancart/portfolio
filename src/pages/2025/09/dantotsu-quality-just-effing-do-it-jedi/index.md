@@ -22,7 +22,7 @@ The truth is, developers have much more power than they think or than they're wi
 
 And honestly, the solutions aren't that complicated:
 
-- **There's no such thing as a quick fix**. If you want to solve a bug, you have to address its root cause—even if it takes two days. If someone asks why it takes so long, explain it.
+- **There's no such thing as a quick fix**. If you want to solve a bug, you have to address its root cause - even if it takes two days. If someone asks why it takes so long, explain it.
 - **Never present an option that sacrifices quality**. When I propose alternatives, every single one includes the necessary refactoring. If I'm pressured to cut corners, I push back: "Are you asking me to deliberately do my job poorly?" (credit to Rémy Luciani for this one).
 - **Don't ask for permission to keep your codebase healthy**. Just do it. Period. "Power isn't given, it's taken." If someone asks what you're working on, explain it.
 

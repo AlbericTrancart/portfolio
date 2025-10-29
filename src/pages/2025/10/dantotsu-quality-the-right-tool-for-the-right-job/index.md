@@ -21,6 +21,6 @@ This is where semantics come into play: what's the real meaning of the things I'
 
 *Example #2:* a team once tried to build an autocomplete feature starting from a "select" component. Visually, they look similar. But semantically, they're two very different patterns - different behaviors, constraints, and user expectations. The result? Bugs everywhere.
 
-One of the best ways to tell a screw from a nail is to understand the concepts you're working with more deeply (see the Seek the Truth mental model).
+One of the best ways to tell a screw from a nail is to understand the concepts you're working with more deeply (see the [Seek the Truth mental model](/2025/09/dantotsu-quality-seek-the-truth/)).
 
 **The better we name things, the more clearly we see the problem in front of us.**
