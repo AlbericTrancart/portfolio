@@ -17,8 +17,8 @@ When you're buried under a mountain of tech debt, it's easy to feel powerless - 
 - Shifting responsibility: "I'd like to refactor but product says we don't have time."
 - Denial: "Great! We negotiated 10% of our capacity to fix bugs. Sure, we won't be able to fix everything, but hey, at least it's something."
 - Resignation: "I know we'll never fix this. I've given up."
-  '
-  The truth is, developers have much more power than they think or than they're willing to admit. That power comes from expertise. We are the only ones who truly understand what's going on under the hood, and we're the only ones who can decide how to fix it.
+
+The truth is, developers have much more power than they think or than they're willing to admit. That power comes from expertise. We are the only ones who truly understand what's going on under the hood, and we're the only ones who can decide how to fix it.
 
 And honestly, the solutions aren't that complicated:
 
