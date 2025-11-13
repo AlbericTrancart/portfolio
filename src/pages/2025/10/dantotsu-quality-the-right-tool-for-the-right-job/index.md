@@ -1,6 +1,6 @@
 ---
 title: 'Dantotsu Quality learning - The Right Tool for the Right Job'
-description: 'The 5th of 10 mental models to write better quality code'
+description: 'The 6th of 10 mental models to write better quality code'
 slug: dantotsu-quality-code-the-right-tool-for-the-right-job
 thumbnail: ./thumbnail.png
 date: 2025-10-28
